@@ -12,13 +12,18 @@ function Tooltip(props: TooltipProps) {
   );
 }
 
-type ExperienceRowProps = { title: string; subtitle: string; link: string };
+type ExperienceRowProps = {
+  title: string;
+  subtitle: string;
+  link: string;
+  tooltip?: string;
+};
 
 function ExperienceRow(props: ExperienceRowProps) {
   return (
     <li className={styles.experienceLineItem}>
       <Link href={`${props.link}`}>
-        <Tooltip text="This is what I most recently worked on!"></Tooltip>
+        <Tooltip text={`${props.tooltip}`}></Tooltip>
         <h4>{props.title}</h4>
         <h4 className={styles.subtitle}>{props.subtitle}</h4>
       </Link>
@@ -41,17 +46,20 @@ export default function Home() {
               <ExperienceRow
                 title="Building The Art of Visual Design"
                 subtitle="Design is a Party, 2023"
-                link="/whatever"
+                link="/art-of-visual-design"
+                tooltip="This is what I most recently worked on!"
               ></ExperienceRow>
               <ExperienceRow
                 title="Creating design opportunities"
                 subtitle="Primer, 2021"
                 link="https://designisaparty.com/creating-community/"
+                tooltip="An article from my blog"
               ></ExperienceRow>
               <ExperienceRow
                 title="Learning the why"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/learning-the-why/"
+                tooltip="Another post from my blog"
               ></ExperienceRow>
             </ol>
           </section>
@@ -61,12 +69,14 @@ export default function Home() {
               <ExperienceRow
                 title="Training the next generation of designers"
                 subtitle="Lambda School, 2020"
-                link="/whatever"
+                link="/art-of-visual-design"
+                tooltip="Some of the work I'm the most proud of 🥹"
               ></ExperienceRow>
               <ExperienceRow
                 title="Scalable feedback systems"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/scaling-feedback/"
+                tooltip="This will also take you to my blog!"
               ></ExperienceRow>
             </ol>
           </section>
@@ -82,11 +92,13 @@ export default function Home() {
                 title="Who defines good taste?"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/who-defines-taste/"
+                tooltip="Yet another blog post 🥰"
               ></ExperienceRow>
               <ExperienceRow
                 title="My outdated portfolio"
                 subtitle="2015-2020"
-                link="https://designisaparty.com/scaling-feedback/"
+                link="https://www.elizabethylin.com"
+                tooltip="Although it's old, I still love the design!"
               ></ExperienceRow>
             </ol>
           </section>
@@ -112,10 +124,20 @@ export default function Home() {
             <p>
               My name is Elizabeth! If you&apos;re looking for my resume, you
               can find it <Link href="/ElizabethLinResume2024.pdf">here</Link>.
+              I'm a product design leader &amp; educator with more than a decade
+              of experience.
+            </p>
+            <p>
+              I also write about my musings on design mentorship and education
+              on my blog{" "}
+              <Link href="designisaparty.com">design is a party</Link>.
             </p>
           </section>
         </section>
       </section>
+      <footer>
+        <h3>Elsewhere on the internet</h3>
+      </footer>
     </main>
   );
 }

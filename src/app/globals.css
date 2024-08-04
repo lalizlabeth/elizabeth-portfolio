@@ -1,6 +1,6 @@
 :root {
   --color-black: #21242c;
-  --color-black60: rgba(33, 36, 44, 0.6);
+  --color-black60: rgba(33, 36, 44, 0.5);
   --color-black16: rgba(33, 36, 44, 0.16);
 
   --color-pink: #ff00ea;
@@ -90,6 +90,7 @@ h2 {
   font-weight: 400;
   font-size: 48px;
   line-height: 1.2;
+  font-style: italic;
 }
 h1 {
   color: var(--color-black);
