@@ -4,7 +4,7 @@ import Link from "next/link";
 
 type ExperienceRowProps = { title?: string; subtitle?: string; link?: string };
 
-export function ExperienceRow(props: ExperienceRowProps) {
+function ExperienceRow(props: ExperienceRowProps) {
   return (
     <li className={styles.experienceLineItem}>
       <Link href={`${props.link}`}>
@@ -55,7 +55,42 @@ export default function Home() {
               <ExperienceRow
                 title="Scalable feedback systems"
                 subtitle="Lambda School, 2020"
-                link="https://designisaparty.com/scaling-feedback//"
+                link="https://designisaparty.com/scaling-feedback/"
+              ></ExperienceRow>
+            </ol>
+          </section>
+          <section className={styles.experienceGroup}>
+            <h3>Product &amp; Craft</h3>
+            <ol>
+              <ExperienceRow
+                title="A learning community for kids"
+                subtitle="Primer, 2022"
+                link="/"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Who defines good taste?"
+                subtitle="2020"
+                link="https://designisaparty.com/who-defines-taste/"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="My outdated portfolio"
+                subtitle="2015-2020"
+                link="https://designisaparty.com/scaling-feedback/"
+              ></ExperienceRow>
+            </ol>
+          </section>
+          <section className={styles.experienceGroup}>
+            <h3>Just for fun</h3>
+            <ol>
+              <ExperienceRow
+                title="Notion templates designed by me"
+                subtitle="Design is a Party, 2023"
+                link="https://www.templatesbyliz.com/"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="An educational font guessing game"
+                subtitle="Design is a Party, 2023"
+                link="https://www.artofvisualdesign.com/fontguessr"
               ></ExperienceRow>
             </ol>
           </section>

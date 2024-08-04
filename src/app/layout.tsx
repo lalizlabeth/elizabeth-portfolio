@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Proza_Libre, IBM_Plex_Mono, Alegreya } from "next/font/google";
+import { IBM_Plex_Mono, Alegreya } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.icon" />
         <title>Elizabeth Lin: Product Design Leader &amp; Educator</title>
       </Head>
       <body className={`${alegreya.variable} ${ibm_plex_mono.variable}`}>
