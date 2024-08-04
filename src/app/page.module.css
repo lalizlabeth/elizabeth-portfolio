@@ -28,6 +28,8 @@
 .experienceGroup p {
   font-family: var(--font-monospace);
   font-size: 15px;
+}
+.experienceGroup p {
   line-height: 26px;
 }
 .experienceGroup p a {
@@ -88,4 +90,37 @@
 
 .backstory {
   flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .experienceLineItem a {
+    flex-direction: column;
+  }
+  .content {
+    gap: 32px;
+  }
+  .experience,
+  .backstory {
+    width: 50%;
+  }
+}
+
+@media (max-width: 650px) {
+  .main {
+    padding: 48px 32px;
+    gap: 32px;
+  }
+  .experience {
+    gap: 32px;
+  }
+  .experienceGroup {
+    gap: 16px;
+  }
+  .content {
+    flex-direction: column-reverse;
+  }
+  .experience,
+  .backstory {
+    width: 100%;
+  }
 }

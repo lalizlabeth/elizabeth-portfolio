@@ -25,7 +25,7 @@ export default function Home() {
       <section className={styles.content}>
         <section className={styles.experience}>
           <section className={styles.experienceGroup}>
-            <h3>Teaching & mentorship</h3>
+            <h3>Teaching &amp; mentorship</h3>
             <ol>
               <ExperienceRow
                 title="Building The Art of Visual Design"
@@ -45,7 +45,7 @@ export default function Home() {
             </ol>
           </section>
           <section className={styles.experienceGroup}>
-            <h3>Process & systems design</h3>
+            <h3>Process &amp; systems design</h3>
             <ol>
               <ExperienceRow
                 title="Training the next generation of designers"
@@ -64,8 +64,8 @@ export default function Home() {
           <section className={styles.experienceGroup}>
             <h3>My backstory</h3>
             <p>
-              My name is Elizabeth! If you're looking for my resume, you can
-              find it <Link href="/ElizabethLinResume2024.pdf">here</Link>.
+              My name is Elizabeth! If you&apos;re looking for my resume, you
+              can find it <Link href="/ElizabethLinResume2024.pdf">here</Link>.
             </p>
           </section>
         </section>
