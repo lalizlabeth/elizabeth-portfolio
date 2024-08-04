@@ -1,3 +1,11 @@
+:root {
+  --color-black: #21242c;
+  --color-black60: rgba(33, 36, 44, 0.6);
+  --color-black16: rgba(33, 36, 44, 0.16);
+
+  --color-pink: #ff00ea;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -59,4 +67,50 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+body {
+  background: radial-gradient(
+    107.81% 212.88% at 0% 0%,
+    rgba(255, 155, 227, 0.4) 0%,
+    rgba(255, 252, 184, 0.4) 25%,
+    rgba(189, 252, 201, 0.4) 50%,
+    rgba(126, 247, 255, 0.4) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* typography */
+h1,
+h2 {
+  font-family: var(--font-fancy);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.2;
+}
+h1 {
+  color: var(--color-black);
+}
+h2 {
+  color: var(--color-black60);
+  font-style: italic;
+}
+
+h3,
+h4,
+h5 {
+  font-family: var(--font-monospace);
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--font-monospace);
+}
+
+main {
+  max-width: 1170px;
+  padding: 80px;
 }

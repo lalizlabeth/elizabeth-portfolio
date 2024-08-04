@@ -2,98 +2,74 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
+type ExperienceRowProps = { title?: string; subtitle?: string; link?: string };
+
+export function ExperienceRow(props: ExperienceRowProps) {
+  return (
+    <li className={styles.experienceLineItem}>
+      <Link href={`${props.link}`}>
+        <h4>{props.title}</h4>
+        <h4 className={styles.subtitle}>{props.subtitle}</h4>
+      </Link>
+    </li>
+  );
+}
+
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <p>
-          <Link href="/whatever">Whatever</Link>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <header className={styles.pageHeader}>
+        <h1>Elizabeth Lin</h1>
+        <h2>Product Design Leader &amp; Educator</h2>
+      </header>
+      <section className={styles.content}>
+        <section className={styles.experience}>
+          <section className={styles.experienceGroup}>
+            <h3>Teaching & mentorship</h3>
+            <ol>
+              <ExperienceRow
+                title="Building The Art of Visual Design"
+                subtitle="Design is a Party, 2023"
+                link="/whatever"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Creating design opportunities"
+                subtitle="Primer, 2021"
+                link="https://designisaparty.com/creating-community/"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Learning the why"
+                subtitle="Lambda School, 2020"
+                link="https://designisaparty.com/learning-the-why/"
+              ></ExperienceRow>
+            </ol>
+          </section>
+          <section className={styles.experienceGroup}>
+            <h3>Process & systems design</h3>
+            <ol>
+              <ExperienceRow
+                title="Training the next generation of designers"
+                subtitle="Lambda School, 2020"
+                link="/whatever"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Scalable feedback systems"
+                subtitle="Lambda School, 2020"
+                link="https://designisaparty.com/scaling-feedback//"
+              ></ExperienceRow>
+            </ol>
+          </section>
+        </section>
+        <section className={styles.backstory}>
+          <section className={styles.experienceGroup}>
+            <h3>My backstory</h3>
+            <p>
+              My name is Elizabeth! If you're looking for my resume, you can
+              find it <Link href="/ElizabethLinResume2024.pdf">here</Link>.
+            </p>
+          </section>
+        </section>
+      </section>
     </main>
   );
 }

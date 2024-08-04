@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Proza_Libre, IBM_Plex_Mono, Alegreya } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const alegreya = Alegreya({
+  weight: "400",
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-fancy",
+});
+
+const ibm_plex_mono = IBM_Plex_Mono({
+  weight: "400",
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  variable: "--font-monospace",
+});
 
 export const metadata: Metadata = {
   title: "Elizabeth Lin: Product Design Leader & Educator",
@@ -21,7 +33,9 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" />
         <title>Elizabeth Lin: Product Design Leader &amp; Educator</title>
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${alegreya.variable} ${ibm_plex_mono.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
