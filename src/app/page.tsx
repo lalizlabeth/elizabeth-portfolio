@@ -87,6 +87,7 @@ export default function Home() {
                 title="A learning community for kids"
                 subtitle="Primer, 2022"
                 link="/"
+                tooltip="The most fun I've had working on a product ✨"
               ></ExperienceRow>
               <ExperienceRow
                 title="Who defines good taste?"
@@ -98,7 +99,7 @@ export default function Home() {
                 title="My outdated portfolio"
                 subtitle="2015-2020"
                 link="https://www.elizabethylin.com"
-                tooltip="Although it's old, I still love the design!"
+                tooltip="I still love the portfolio design, but tread with caution 😇"
               ></ExperienceRow>
             </ol>
           </section>
@@ -109,11 +110,13 @@ export default function Home() {
                 title="Notion templates designed by me"
                 subtitle="Design is a Party, 2023"
                 link="https://www.templatesbyliz.com/"
+                tooltip="I make Notion templates sometimes!"
               ></ExperienceRow>
               <ExperienceRow
                 title="An educational font guessing game"
                 subtitle="Design is a Party, 2023"
                 link="https://www.artofvisualdesign.com/fontguessr"
+                tooltip="Try to get Typography Titan 😉!"
               ></ExperienceRow>
             </ol>
           </section>
@@ -135,7 +138,7 @@ export default function Home() {
           </section>
         </section>
       </section>
-      <footer>
+      <footer className={styles.footer}>
         <h3>Elsewhere on the internet</h3>
       </footer>
     </main>
