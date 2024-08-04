@@ -127,8 +127,8 @@ export default function Home() {
             <p>
               My name is Elizabeth! If you&apos;re looking for my resume, you
               can find it <Link href="/ElizabethLinResume2024.pdf">here</Link>.
-              I'm a product design leader &amp; educator with more than a decade
-              of experience.
+              I&apos;m a product design leader &amp; educator with more than a
+              decade of experience.
             </p>
             <p>
               I also write about my musings on design mentorship and education
