@@ -2,12 +2,23 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
 
-type ExperienceRowProps = { title?: string; subtitle?: string; link?: string };
+type TooltipProps = { text: string };
+
+function Tooltip(props: TooltipProps) {
+  return (
+    <div className={styles.tooltip}>
+      <p className={styles.tooltipText}>{props.text}</p>
+    </div>
+  );
+}
+
+type ExperienceRowProps = { title: string; subtitle: string; link: string };
 
 function ExperienceRow(props: ExperienceRowProps) {
   return (
     <li className={styles.experienceLineItem}>
       <Link href={`${props.link}`}>
+        <Tooltip text="This is what I most recently worked on!"></Tooltip>
         <h4>{props.title}</h4>
         <h4 className={styles.subtitle}>{props.subtitle}</h4>
       </Link>
@@ -69,7 +80,7 @@ export default function Home() {
               ></ExperienceRow>
               <ExperienceRow
                 title="Who defines good taste?"
-                subtitle="2020"
+                subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/who-defines-taste/"
               ></ExperienceRow>
               <ExperienceRow
