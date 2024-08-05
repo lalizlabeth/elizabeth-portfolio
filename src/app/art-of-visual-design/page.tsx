@@ -76,8 +76,21 @@ export default function ArtofVisualDesign() {
             </li>
             <li>
               {"Grew an online audience from "}{" "}
-              <strong>{"0 to 30k followers"}</strong>{" "}
-              {"across Instagram and TikTok."}
+              <strong>{"0 to 30k followers"}</strong> {"across "}{" "}
+              <Link
+                className={styles.inlineLink}
+                href="https://www.tiktok.com/@lalizlabeth.design"
+              >
+                TikTok
+              </Link>{" "}
+              {" and "}{" "}
+              <Link
+                className={styles.inlineLink}
+                href="https://www.tiktok.com/@lalizlabeth.design"
+              >
+                Instagram
+              </Link>
+              .
             </li>
           </ol>
         </section>
@@ -113,7 +126,7 @@ export default function ArtofVisualDesign() {
             </li>
           </ol>
           <p>
-            {"You can read more about my curriculum development process in "}{" "}
+            {"Read more about my curriculum development process in "}{" "}
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/how-to-teach/"
@@ -156,10 +169,26 @@ export default function ArtofVisualDesign() {
           ></Image>
         </section>
         <section className={styles.subsection}>
+          <h3 className={styles.heading2}>Figma practice worksheets</h3>
+          <p>
+            {
+              "I believe that everyone should have a high level of proficiency with the design tools they are using!  Because there are no prerequisites, I designed a series of 'Figma Camp' worksheets for students to complete along the way."
+            }
+          </p>{" "}
+          <Image
+            src="/art-of-visual-design/figma-worksheets.gif"
+            alt="Figma worksheets from the course."
+            width={0}
+            height={0}
+            unoptimized={true}
+            style={{ width: "100%", height: "100%" }}
+          ></Image>
+        </section>
+        <section className={styles.subsection}>
           <h3 className={styles.heading2}>Live events</h3>
           <p>
             {
-              "This is a screenshot from one of my public educational live events! I use Figma to run all my workshops. It gets a little chaotic sometimes, but it's so much fun! My aspiration is to mimic the energy of an IRL experience."
+              "I use Figma to run all my live workshops. It gets a little chaotic sometimes, but it's so much fun! My aspiration is to mimic the energy of an IRL experience."
             }
           </p>
           <Image
@@ -175,7 +204,12 @@ export default function ArtofVisualDesign() {
           <h3 className={styles.heading2}>Breaking the rules</h3>
           <p>
             {
-              "The second course is called “What rules?” I wanted to create space for us to question the “rules” created by the design industry. Can “ugly” be defined? What happens when instead of being constrained to one color in your design, you have to use five? What happens when you have to create a type hierarchy using Papyrus?"
+              "The 2nd course is called “What rules?” I wanted to create space for us to question the “rules” created by the design industry. When designing this course, I was very inspired by the Cranbrook Academy of Art and Emigre Magazine."
+            }
+          </p>
+          <p>
+            {
+              "Can “ugly” be defined? What happens when instead of being constrained to one color in your design, you have to use five? What happens when you have to create a type hierarchy using Papyrus?"
             }
           </p>
           <Image
