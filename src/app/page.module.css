@@ -12,7 +12,7 @@
   text-decoration: none;
 }
 
-.main a:hover * {
+.main a:hover .title {
   color: var(--color-pink);
   font-style: italic;
 }
