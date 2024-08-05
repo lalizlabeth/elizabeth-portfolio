@@ -50,10 +50,10 @@ export default function Home() {
                 tooltip="This is what I most recently worked on!"
               ></ExperienceRow>
               <ExperienceRow
-                title="Creating design opportunities"
-                subtitle="Primer, 2021"
-                link="https://designisaparty.com/creating-opportunities/"
-                tooltip="📄 Blog: Finding a Primer design intern"
+                title="Training the next generation of designers"
+                subtitle="Lambda School, 2020"
+                link="/lambda-school"
+                tooltip="Some work I'm the most proud of 🥹"
               ></ExperienceRow>
               <ExperienceRow
                 title="Learning the why"
@@ -67,10 +67,10 @@ export default function Home() {
             <h3>Process &amp; systems design</h3>
             <ol>
               <ExperienceRow
-                title="Training the next generation of designers"
-                subtitle="Lambda School, 2020"
-                link="/lambda-school"
-                tooltip="Some work I'm the most proud of 🥹"
+                title="Creating design opportunities"
+                subtitle="Primer, 2021"
+                link="https://designisaparty.com/creating-opportunities/"
+                tooltip="📄 Blog: How we found a Primer design intern"
               ></ExperienceRow>
               <ExperienceRow
                 title="Scalable feedback systems"
