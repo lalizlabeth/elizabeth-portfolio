@@ -4,8 +4,12 @@ import Link from "next/link";
 
 export default function LambdaSchool() {
   return (
-    <PageLayout>
-      <h1>Training the next generation of designers</h1>
+    <PageLayout
+      title="Training the next generation of designers"
+      subtitle="Lambda School, 2020"
+      imageSrc="/art-of-visual-design/header.png"
+      imageAlt="Learning platform for The Art of Visual Design"
+    >
       <section className={styles.section}>
         <p>In 2023, I left my full-time job to see if I could do two things:</p>
         <ol>

@@ -7,8 +7,11 @@ export default function ArtofVisualDesign() {
     <PageLayout
       title="Founding The Art of Visual Design"
       subtitle="Design is a Party, 2023"
+      imageSrc="/art-of-visual-design/header.png"
+      imageAlt="Learning platform for The Art of Visual Design"
     >
       <section className={styles.section}>
+        <h2 className={styles.heading1}>Overview</h2>
         <p>In 2023, I left my full-time job to see if I could do two things:</p>
         <ol>
           <li>Start a successful business on my own.</li>

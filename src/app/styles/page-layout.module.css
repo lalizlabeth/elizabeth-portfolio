@@ -3,7 +3,7 @@
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  gap: 60px;
+  gap: 48px;
   width: 100%;
 }
 
@@ -35,7 +35,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 /* typography */
@@ -68,4 +68,12 @@
 .links a:hover {
   color: var(--color-pink);
   font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .main {
+    padding: 48px 32px;
+    gap: 32px;
+  }
 }

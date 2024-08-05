@@ -4,8 +4,12 @@ import Link from "next/link";
 
 export default function Primer() {
   return (
-    <PageLayout>
-      <h1>A learning community for kids</h1>
+    <PageLayout
+      title="A learning community for kid"
+      subtitle="Primer, 2022"
+      imageSrc="/art-of-visual-design/header.png"
+      imageAlt="Learning platform for The Art of Visual Design"
+    >
       <section className={styles.section}>
         <p>In 2023, I left my full-time job to see if I could do two things:</p>
         <ol>
