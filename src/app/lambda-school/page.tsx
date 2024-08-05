@@ -7,27 +7,77 @@ export default function LambdaSchool() {
     <PageLayout
       title="Training the next generation of designers"
       subtitle="Lambda School, 2020"
-      imageSrc="/art-of-visual-design/header.png"
-      imageAlt="Learning platform for The Art of Visual Design"
+      imageSrc="/lambda-school/header.png"
+      imageAlt="Collaborative Figma exercise on iteration"
     >
       <section className={styles.section}>
-        <p>In 2023, I left my full-time job to see if I could do two things:</p>
+        <h2 className={styles.heading1}>Overview</h2>
+        <p>
+          {
+            "In 2020, I joined Lambda School (now BloomTech) to lead and build the second half of the UX design program. During my time there, I did a lot:"
+          }
+        </p>
         <ol>
-          <li>Start a successful business on my own.</li>
-          <li>Build the best online visual design course.</li>
+          <li>
+            Led the experiential learning design team of 2 design managers.
+          </li>
+          <li>
+            Oversaw design portfolio and program quality for 100+ UX design
+            students.
+          </li>
+          <li>
+            Mentored students to land roles at companies like Shopify, Disney+,
+            and Chase.
+          </li>
+          <li>Architected scalable remote design feedback systems.</li>
+          <li>
+            {
+              "Designed & developed 5+ months of curriculum for the UX design program."
+            }
+          </li>
+          <li>
+            Built a partnership with Figma, so that all students could get Figma
+            for free.
+          </li>
         </ol>
       </section>
       <section className={styles.section}>
-        <h2 className={styles.heading1}>Highlights</h2>
-        <h3 className={styles.heading2}>Student stories</h3>
+        <h2 className={styles.heading1}>A little bit of context</h2>
+        <p>
+          {
+            "Lambda School was a bootcamp famous for their ISA model: learn now and pay a percentage of your income after you get a job. Every program was cohort-based and structured in this way:"
+          }
+        </p>
+      </section>
+      <section className={styles.section}>
+        <h2 className={styles.heading1}>Snapshots</h2>
+        <p>{"Snapshots of some of my favorite moments."}</p>
       </section>
       <section className={styles.section}>
         <h2 className={styles.heading1}>Related links</h2>
         <ul className={styles.links}>
           <li>
             ↗ {""}
-            <Link href="https://www.artofvisualdesign.com/">
-              {"The Art of Visual Design (Elizabeth's Version)"}
+            <Link href="https://designisaparty.com/scaling-feedback/">
+              {"Blog post: Scaling feedback"}
+            </Link>
+          </li>
+          <li>
+            ↗ {""}
+            <Link href="https://designisaparty.com/participation-points/">
+              {"Blog post: Participation points"}
+            </Link>
+          </li>
+          <li>
+            ↗ {""}
+            <Link href="https://designisaparty.com/learning-playgrounds/">
+              {"Blog post: Learning playgrounds"}
+            </Link>
+          </li>
+          <li>
+            ↗ {""}
+            <Link href="https://designisaparty.com/creating-community/">
+              {"Blog post: Creating learning communities"}
             </Link>
           </li>
         </ul>

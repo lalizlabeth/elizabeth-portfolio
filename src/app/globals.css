@@ -120,3 +120,7 @@ main {
   max-width: 1170px;
   padding: 80px;
 }
+
+strong {
+  font-weight: 700;
+}

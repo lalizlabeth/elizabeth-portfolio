@@ -11,7 +11,7 @@ const alegreya = Alegreya({
 });
 
 const ibm_plex_mono = IBM_Plex_Mono({
-  weight: "400",
+  weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   variable: "--font-monospace",
