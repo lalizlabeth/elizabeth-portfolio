@@ -53,13 +53,13 @@ export default function Home() {
                 title="Creating design opportunities"
                 subtitle="Primer, 2021"
                 link="https://designisaparty.com/creating-community/"
-                tooltip="📄 Blog: Making opportunities for young designers"
+                tooltip="📄 Blog: The importance of making opportunities for young designers"
               ></ExperienceRow>
               <ExperienceRow
                 title="Learning the why"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/learning-the-why/"
-                tooltip="Another post from my blog on learning to explain the why 🧐"
+                tooltip="📄 Blog: How to teach design reasoning"
               ></ExperienceRow>
             </ol>
           </section>
@@ -76,7 +76,7 @@ export default function Home() {
                 title="Scalable feedback systems"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/scaling-feedback/"
-                tooltip="This will also take you to my blog!"
+                tooltip="📄 Blog: How I built feedback systems for 100 students"
               ></ExperienceRow>
             </ol>
           </section>
@@ -93,13 +93,13 @@ export default function Home() {
                 title="Who defines good taste?"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/who-defines-taste/"
-                tooltip="Yet another blog post, this one about taste 🥰"
+                tooltip="📄 Yet another blog post, this one about taste"
               ></ExperienceRow>
               <ExperienceRow
                 title="My outdated portfolio"
                 subtitle="2015-2020"
                 link="https://www.elizabethylin.com"
-                tooltip="I still love the portfolio design, but tread with caution 😇"
+                tooltip="I still love the portfolio design, but pls tread with caution 😇"
               ></ExperienceRow>
             </ol>
           </section>
@@ -136,14 +136,6 @@ export default function Home() {
             <p>
               My name is Elizabeth! I&apos;m a product design leader &amp;
               educator with more than a decade of experience.
-            </p>
-            <p>
-              I also write about my musings on design mentorship and education
-              on my blog{" "}
-              <Link href="designisaparty.com" className={styles.link}>
-                design is a party
-              </Link>
-              .
             </p>
           </section>
         </section>

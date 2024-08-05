@@ -172,7 +172,23 @@ export default function ArtofVisualDesign() {
           ></Image>
         </section>
         <section className={styles.subsection}>
-          <h3 className={styles.heading2}>Process videos</h3>
+          <h3 className={styles.heading2}>Breaking the rules</h3>
+          <p>
+            {
+              "The second course is called “What rules?” I wanted to create space for us to question the “rules” created by the design industry. Can “ugly” be defined? What happens when instead of being constrained to one color in your design, you have to use five? What happens when you have to create a type hierarchy using Papyrus?"
+            }
+          </p>
+          <Image
+            src="/art-of-visual-design/break-the-rules.gif"
+            alt="Live event for teaching Figma."
+            width={0}
+            height={0}
+            unoptimized={true}
+            style={{ width: "100%", height: "100%" }}
+          ></Image>
+        </section>
+        <section className={styles.subsection}>
+          <h3 className={styles.heading2}>Teaching my process</h3>
           <p>
             {
               "I started a YouTube channel! One of my favorite videos is this video on how I find and use design inspiration in my own design work."
@@ -214,7 +230,7 @@ export default function ArtofVisualDesign() {
           <li>
             ↗ {""}
             <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw">
-              {"My new YouTube channel"}
+              {"Educational long-form videos"}
             </Link>
           </li>
           <li>
