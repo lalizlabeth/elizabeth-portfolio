@@ -87,7 +87,7 @@ export default function Home() {
                 title="A learning community for kids"
                 subtitle="Primer, 2022"
                 link="/primer"
-                tooltip="The most fun I've had working on a product ✨"
+                tooltip="I learned a lot as the founding designer on this team 🫡"
               ></ExperienceRow>
               <ExperienceRow
                 title="Who defines good taste?"
@@ -119,10 +119,10 @@ export default function Home() {
                 tooltip="Typography for $1000!"
               ></ExperienceRow>
               <ExperienceRow
-                title="GUIS through Art History"
+                title="GUIS through art history"
                 subtitle="2021"
                 link="/guis-through-art-history"
-                tooltip="An experimental course I taught through Hyperlink"
+                tooltip="How can art movements like Rococo and Surrealism push our UI design?"
               ></ExperienceRow>
               <ExperienceRow
                 title="Notion templates designed by me"
