@@ -44,11 +44,6 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
       },
-      {
-        url: "https://lalizlabeth.com/og-image@2x.png", // Must be an absolute URL
-        width: 2400,
-        height: 1260,
-      },
     ],
     locale: "en_US",
     type: "website",
