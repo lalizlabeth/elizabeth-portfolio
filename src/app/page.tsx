@@ -52,8 +52,8 @@ export default function Home() {
               <ExperienceRow
                 title="Creating design opportunities"
                 subtitle="Primer, 2021"
-                link="https://designisaparty.com/creating-community/"
-                tooltip="📄 Blog: The importance of making opportunities for young designers"
+                link="https://designisaparty.com/creating-opportunities/"
+                tooltip="📄 Blog: Finding a Primer design intern"
               ></ExperienceRow>
               <ExperienceRow
                 title="Learning the why"
