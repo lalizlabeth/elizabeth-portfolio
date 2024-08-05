@@ -272,6 +272,28 @@ export default function LambdaSchool() {
           </p>
         </section>
         <section className={styles.subsection}>
+          <h3 className={styles.heading2}>Figma skills map</h3>
+          <p>
+            {
+              "Outside of visual design principles, we noticed that students had a difficult time using design tools. We didn’t want the tool to become their blocker in creating high-quality design work, so we mapped out every Figma skill in our ideal order of learning."
+            }
+          </p>
+          <video
+            src="/lambda-school/figma-map.mp4"
+            width={0}
+            height={0}
+            style={{ width: "100%", height: "100%" }}
+            loop
+            muted
+            autoPlay
+          ></video>
+          <p>
+            {
+              "Students could make a copy of this map and toggle which skills they have mastered!"
+            }
+          </p>
+        </section>
+        <section className={styles.subsection}>
           <h3 className={styles.heading2}>Design Day!</h3>
           <p>
             {
@@ -333,6 +355,18 @@ export default function LambdaSchool() {
               ↗ {""}
               <Link href="https://designisaparty.com/creating-community/">
                 {"Creating learning communities"}
+              </Link>
+            </li>
+            <li>
+              ↗ {""}
+              <Link href="https://www.elizabethylin.com/teaching/project/labs/">
+                {"Building the Lambda Labs curriculum"}
+              </Link>
+            </li>
+            <li>
+              ↗ {""}
+              <Link href="https://www.elizabethylin.com/teaching/project/visual-design-club/">
+                {"Teaching visual design"}
               </Link>
             </li>
             <li>
