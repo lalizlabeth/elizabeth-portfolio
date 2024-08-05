@@ -24,7 +24,7 @@ function ExperienceRow(props: ExperienceRowProps) {
     <li className={styles.experienceLineItem}>
       <Link href={`${props.link}`}>
         <Tooltip text={`${props.tooltip}`}></Tooltip>
-        <h4>{props.title}</h4>
+        <h4 className={styles.title}>{props.title}</h4>
         <h4 className={styles.subtitle}>{props.subtitle}</h4>
       </Link>
     </li>
@@ -53,13 +53,13 @@ export default function Home() {
                 title="Creating design opportunities"
                 subtitle="Primer, 2021"
                 link="https://designisaparty.com/creating-community/"
-                tooltip="An article from my blog"
+                tooltip="A blog post about design internships"
               ></ExperienceRow>
               <ExperienceRow
                 title="Learning the why"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/learning-the-why/"
-                tooltip="Another post from my blog"
+                tooltip="Another post from my blog on learning to explain the why 😇"
               ></ExperienceRow>
             </ol>
           </section>
@@ -70,7 +70,7 @@ export default function Home() {
                 title="Training the next generation of designers"
                 subtitle="Lambda School, 2020"
                 link="/art-of-visual-design"
-                tooltip="Some of the work I'm the most proud of 🥹"
+                tooltip="Some work I'm the most proud of 🥹"
               ></ExperienceRow>
               <ExperienceRow
                 title="Scalable feedback systems"
@@ -107,16 +107,22 @@ export default function Home() {
             <h3>Just for fun</h3>
             <ol>
               <ExperienceRow
-                title="Notion templates designed by me"
-                subtitle="Design is a Party, 2023"
-                link="https://www.templatesbyliz.com/"
-                tooltip="I make Notion templates sometimes!"
-              ></ExperienceRow>
-              <ExperienceRow
                 title="An educational font guessing game"
                 subtitle="Design is a Party, 2023"
                 link="https://www.artofvisualdesign.com/fontguessr"
                 tooltip="Try to get Typography Titan 😉!"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Jeopardy run by Figma variables"
+                subtitle="Design is a Party, 2023"
+                link="https://www.figma.com/community/file/1258765867218511354/figma-jeopardy"
+                tooltip="Typography for $1000!"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Notion templates designed by me"
+                subtitle="Design is a Party, 2023"
+                link="https://www.templatesbyliz.com/"
+                tooltip="I make Notion templates sometimes!"
               ></ExperienceRow>
             </ol>
           </section>
@@ -124,11 +130,12 @@ export default function Home() {
         <section className={styles.backstory}>
           <section className={styles.experienceGroup}>
             <h3>My backstory</h3>
+            <Link href="/ElizabethLinResume2024.pdf">
+              <h4 className={styles.title}>Resume</h4>
+            </Link>
             <p>
-              My name is Elizabeth! If you&apos;re looking for my resume, you
-              can find it <Link href="/ElizabethLinResume2024.pdf">here</Link>.
-              I&apos;m a product design leader &amp; educator with more than a
-              decade of experience.
+              My name is Elizabeth! I&apos;m a product design leader &amp;
+              educator with more than a decade of experience.
             </p>
             <p>
               I also write about my musings on design mentorship and education
@@ -140,6 +147,31 @@ export default function Home() {
       </section>
       <footer className={styles.footer}>
         <h3>Elsewhere on the internet</h3>
+        <section className={styles.links}>
+          <Link href="https://designisaparty.com/">
+            <h4 className={styles.title}>Blog</h4>
+          </Link>
+          ·
+          <Link href="https://www.linkedin.com/in/elizabethylin/">
+            <h4 className={styles.title}>LinkedIn</h4>
+          </Link>
+          ·
+          <Link href="https://x.com/lalizlabeth">
+            <h4 className={styles.title}>Twitter</h4>
+          </Link>
+          ·
+          <Link href="https://www.tiktok.com/@lalizlabeth">
+            <h4 className={styles.title}>TikTok</h4>
+          </Link>{" "}
+          ·
+          <Link href="https://www.tiktok.com/@lalizlabeth.design">
+            <h4 className={styles.title}>Instagram</h4>
+          </Link>
+          ·
+          <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw">
+            <h4 className={styles.title}>YouTube</h4>
+          </Link>
+        </section>
       </footer>
     </main>
   );

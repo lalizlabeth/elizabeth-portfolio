@@ -6,6 +6,10 @@
   width: 100%;
 }
 
+.main * {
+  text-decoration: none;
+}
+
 .pageHeader {
   display: flex;
   flex-direction: column;
@@ -33,6 +37,7 @@
 .experienceGroup p {
   line-height: 26px;
 }
+
 .experienceGroup p a {
   color: var(--color-pink);
   text-decoration: none;
@@ -42,7 +47,6 @@
 }
 .footer h3,
 .experienceGroup h3 {
-  color: var(--color-pink);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -73,22 +77,16 @@
   justify-content: space-between;
 }
 
-.experienceLineItem .subtitle {
+/* typography */
+.title {
+  color: var(--color-pink);
+}
+.subtitle {
   color: var(--color-black60);
 }
 
 .experienceLineItem a:hover {
-  color: var(--color-pink);
   font-style: italic;
-}
-
-.experienceLineIem a:hover .subtitle:after {
-  content: "---";
-  display: block;
-  color: blue;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 .backstory {
@@ -128,6 +126,9 @@
   .experience,
   .backstory {
     width: 100%;
+  }
+  .tooltip {
+    display: none;
   }
 }
 
@@ -170,4 +171,29 @@ p.tooltipText {
 }
 .experienceLineItem a:hover .tooltip {
   display: block;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer a {
+  color: var(--color-black);
+  text-decoration: none;
+  position: relative;
+}
+
+.footer a:hover {
+  color: var(--color-pink);
+  font-style: italic;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
