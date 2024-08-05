@@ -69,30 +69,105 @@ export default function ArtofVisualDesign() {
               {"."}
             </li>
             <li>
+              {"Led design workshops with "} <strong>{"100+ attendees"}</strong>{" "}
               {
-                "Led design workshops with 100+ attendees including The Art of Typography and Elizabeth’s Case Study Workshop."
+                "including The Art of Typography and Elizabeth’s Case Study Workshop."
               }
             </li>
             <li>
-              {
-                "Grew an online audience from 0 to 30k followers across Instagram & TikTok."
-              }
-            </li>
-            <li>
-              {
-                "Learned how to operate a business and file taxes in the EU and UK."
-              }
-            </li>
-            <li>
-              {
-                "Processed a bunch of paperwork to be approved at a charter school network!"
-              }
+              {"Grew an online audience from "}{" "}
+              <strong>{"0 to 30k followers"}</strong>{" "}
+              {"across Instagram and TikTok."}
             </li>
           </ol>
         </section>
+        <section className={styles.subsection}>
+          <h3 className={styles.heading2}>{"Some firsts"}</h3>
+          <ol>
+            <li>
+              {"My business became an LLC called Design is a Party, LLC!"}
+            </li>{" "}
+            <li>
+              {
+                "I conquered a bunch of paperwork and became an approved educator with a Bay Area charter school network."
+              }
+            </li>{" "}
+          </ol>
+        </section>
       </section>
+      <hr className={styles.divider}></hr>
       <section className={styles.section}>
         <h2 className={styles.heading1}>Highlights</h2>
+        <section className={styles.subsection}>
+          <h3 className={styles.heading2}>Curriculum development</h3>
+          <p>
+            {
+              "When I was developing the curriculum, my goal was to strike a balance between the practical and experimental. I divided learning visual design into three foundational areas:"
+            }
+          </p>
+          <ol>
+            <li>
+              <strong>Technique:</strong>{" "}
+              {
+                "How do you make your ideas come to life? Execution should not be a blocker to your ideas. If you have an idea in your head, you should be able to create it in your design tool of choice in an effective way."
+              }
+            </li>
+            <li>
+              <strong>Taste:</strong>{" "}
+              {
+                "How do you know when something is considered good taste according to the industry? How can you cultivate your own aesthetic? When something feels off, can you articulate what’s off about it?"
+              }
+            </li>
+            <li>
+              <strong>Tactics:</strong>{" "}
+              {
+                "What are the design standards that industry professionals abide by? What is the most methodical way to create a type hierarchy? When your design doesn’t look good yet, what are strategies you can employ to improve it?"
+              }
+            </li>
+          </ol>
+          <p>
+            {"You can read more about my curriculum development process in "}{" "}
+            <Link
+              className={styles.inlineLink}
+              href="https://designisaparty.com/how-to-teach/"
+            >
+              How to teach everything without being everywhere all at once
+            </Link>
+            .
+          </p>
+          <video
+            src="/art-of-visual-design/curriculum.mp4"
+            width={0}
+            height={0}
+            style={{ width: "100%", height: "100%" }}
+            loop
+            muted
+            autoPlay
+          ></video>
+        </section>
+        <section className={styles.subsection}>
+          <h3 className={styles.heading2}>Learning playgrounds</h3>
+          <p>
+            {"My teaching philosophy is centered around "}
+            <Link
+              href="designisaparty.com/learning-playgrounds"
+              className={styles.inlineLink}
+            >
+              {"learning playgrounds"}
+            </Link>
+            {
+              ", spaces intentionally designed to guide students in exploring various topics. When I build a playground, I try to balance structure while creating space for free play."
+            }
+          </p>{" "}
+          <Image
+            src="/art-of-visual-design/examples.gif"
+            alt="Collage of various playgrounds I've designed."
+            width={0}
+            height={0}
+            unoptimized={true}
+            style={{ width: "100%", height: "100%" }}
+          ></Image>
+        </section>
         <section className={styles.subsection}>
           <h3 className={styles.heading2}>Live events</h3>
           <p>
@@ -127,6 +202,7 @@ export default function ArtofVisualDesign() {
           </div>
         </section>
       </section>
+      <hr className={styles.divider}></hr>
       <section className={styles.section}>
         <h2 className={styles.heading1}>Related links</h2>
         <ul className={styles.links}>
