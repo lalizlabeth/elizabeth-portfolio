@@ -44,7 +44,7 @@ export default function RootLayout({
         />{" "}
         <meta
           name="twitter:image"
-          content="https://elizabeth-portfolio-tau.vercel.app/og-image.png"
+          content="https://lalizlabeth.com/og-image.png"
         />
         <meta name="twitter:site" content="@lalizlabeth"></meta>
         <meta
@@ -58,7 +58,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://elizabeth-portfolio-tau.vercel.app/og-image@2x.png"
+          content="https://lalizlabeth.com/og-image@2x.png"
         />
         <meta
           property="og:description"
