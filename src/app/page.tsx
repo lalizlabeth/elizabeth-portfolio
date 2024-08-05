@@ -24,7 +24,7 @@ function ExperienceRow(props: ExperienceRowProps) {
     <li className={styles.experienceLineItem}>
       <Link href={`${props.link}`}>
         <Tooltip text={`${props.tooltip}`}></Tooltip>
-        <h4 className={styles.title}>{props.title}</h4>
+        <h4 className={styles.title}>↗ {props.title}</h4>
         <h4 className={styles.subtitle}>{props.subtitle}</h4>
       </Link>
     </li>
@@ -108,19 +108,19 @@ export default function Home() {
             <ol>
               <ExperienceRow
                 title="An educational font guessing game"
-                subtitle="Design is a Party, 2023"
+                subtitle="2023"
                 link="https://www.artofvisualdesign.com/fontguessr"
                 tooltip="Try to get Typography Titan 😉!"
               ></ExperienceRow>
               <ExperienceRow
                 title="Jeopardy run by Figma variables"
-                subtitle="Design is a Party, 2023"
+                subtitle="2023"
                 link="https://www.figma.com/community/file/1258765867218511354/figma-jeopardy"
                 tooltip="Typography for $1000!"
               ></ExperienceRow>
               <ExperienceRow
                 title="Notion templates designed by me"
-                subtitle="Design is a Party, 2023"
+                subtitle="2023"
                 link="https://www.templatesbyliz.com/"
                 tooltip="I make Notion templates sometimes!"
               ></ExperienceRow>
