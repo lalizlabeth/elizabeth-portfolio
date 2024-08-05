@@ -124,3 +124,10 @@ main {
 strong {
   font-weight: 700;
 }
+/* Responsive */
+@media (max-width: 650px) {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+}
