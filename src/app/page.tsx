@@ -93,7 +93,7 @@ export default function Home() {
                 title="Who defines good taste?"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/who-defines-taste/"
-                tooltip="Yet another blog post 🥰"
+                tooltip="Yet another blog post, this one about taste 🥰"
               ></ExperienceRow>
               <ExperienceRow
                 title="My outdated portfolio"
