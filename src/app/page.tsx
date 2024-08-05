@@ -131,7 +131,7 @@ export default function Home() {
           <section className={styles.experienceGroup}>
             <h3>My backstory</h3>
             <Link href="/ElizabethLinResume2024.pdf">
-              <h4 className={styles.title}>Resume</h4>
+              <h4 className={styles.title}>↗ Resume</h4>
             </Link>
             <p>
               My name is Elizabeth! I&apos;m a product design leader &amp;
