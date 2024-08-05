@@ -3,14 +3,16 @@
 .main,
 .pageHeader,
 .content,
-.experience {
+.experience,
+.backstory {
   display: flex;
   box-sizing: border-box;
 }
 
 .main,
 .pageHeader,
-.experience {
+.experience,
+.backstory {
   flex-direction: column;
 }
 
@@ -38,6 +40,16 @@ a.link:hover .subtitle {
 }
 a.link:hover .title {
   color: var(--color-pink);
+}
+
+.inlineLink {
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-black16);
+  text-decoration: none;
+}
+
+.inlineLink:hover {
+  font-style: italic;
 }
 
 /* typography */

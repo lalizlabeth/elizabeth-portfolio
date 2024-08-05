@@ -134,10 +134,27 @@ export default function Home() {
               <h4 className={styles.title}>↗ Resume</h4>
             </Link>
             <p>
-              My name is Elizabeth! I&apos;m a product design leader &amp;
-              educator with more than a decade of experience.
-            </p>
-          </section>
+              {
+                "My name is Elizabeth! I'm a product design leader and educator with more than a decade of experience."
+              }
+            </p>{" "}
+            <p>
+              {
+                "I'm currently building an alternative design school starting with"
+              }{" "}
+              <Link className={styles.inlineLink} href="artofvisualdesign.com">
+                {"↗ The Art of Visual Design (Elizabeth's Version)"}
+              </Link>
+              {
+                ". Previously, I worked at companies like Khan Academy, Primer, and Lambda School."
+              }
+            </p>{" "}
+            <p>
+              {
+                "Outside of design, I love talking about Alexander McQueen, judging people's reading lists, and playing classical saxophone."
+              }
+            </p>{" "}
+          </section>{" "}
         </section>
       </section>
       <footer className={styles.footer}>

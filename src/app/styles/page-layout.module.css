@@ -79,7 +79,7 @@
 .inlineLink {
   /* color: var(--color-pink); */
   color: var(--color-black);
-  border-bottom: 1px solid var(--color-pink);
+  border-bottom: 1px solid var(--color-black16);
   text-decoration: none;
 }
 
