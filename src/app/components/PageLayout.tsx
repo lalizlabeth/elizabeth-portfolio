@@ -31,6 +31,13 @@ export default function PageLayout(props: PageLayoutProps) {
         ></Image>
       </header>
       {props.children}
+      <hr className={styles.divider}></hr>
+      <footer>
+        {" "}
+        <Link href="/" className={styles.homeLink}>
+          ← Elizabeth Lin
+        </Link>
+      </footer>
     </main>
   );
 }

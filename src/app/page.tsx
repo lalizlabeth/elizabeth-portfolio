@@ -59,7 +59,7 @@ export default function Home() {
                 title="Learning the why"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/learning-the-why/"
-                tooltip="Another post from my blog on learning to explain the why 😇"
+                tooltip="Another post from my blog on learning to explain the why 🧐"
               ></ExperienceRow>
             </ol>
           </section>

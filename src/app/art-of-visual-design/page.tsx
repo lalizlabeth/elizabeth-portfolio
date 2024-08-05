@@ -213,6 +213,12 @@ export default function ArtofVisualDesign() {
           </li>
           <li>
             ↗ {""}
+            <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw">
+              {"My new YouTube channel"}
+            </Link>
+          </li>
+          <li>
+            ↗ {""}
             <Link href="https://designisaparty.com/saturns-return/">
               {"Saturn has returned: A new design school"}
             </Link>
