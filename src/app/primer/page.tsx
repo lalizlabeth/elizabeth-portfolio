@@ -1,21 +1,26 @@
 import PageLayout from "../components/PageLayout";
 import styles from "../styles/page-layout.module.css";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Primer() {
   return (
     <PageLayout
-      title="A learning community for kid"
+      title="A learning community for kids"
       subtitle="Primer, 2022"
       imageSrc="/art-of-visual-design/header.png"
       imageAlt="Learning platform for The Art of Visual Design"
     >
       <section className={styles.section}>
-        <p>In 2023, I left my full-time job to see if I could do two things:</p>
-        <ol>
-          <li>Start a successful business on my own.</li>
-          <li>Build the best online visual design course.</li>
-        </ol>
+        <h2 className={styles.heading1}>Overview</h2>
+        <section className={styles.subsection}>
+          <p>I joined Primer as the</p>
+          <ol>
+            <li>
+              Led the experiential learning design team of 2 design managers.
+            </li>
+          </ol>
+        </section>
       </section>
       <section className={styles.section}>
         <h2 className={styles.heading1}>Highlights</h2>

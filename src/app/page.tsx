@@ -129,7 +129,7 @@ export default function Home() {
         </section>
         <section className={styles.backstory}>
           <section className={styles.experienceGroup}>
-            <h3>My backstory</h3>
+            <h3>About me</h3>
             <Link className={styles.link} href="/ElizabethLinResume2024.pdf">
               <h4 className={styles.title}>↗ Resume</h4>
             </Link>
