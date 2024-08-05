@@ -81,19 +81,6 @@ export default function ArtofVisualDesign() {
             </li>
           </ol>
         </section>
-        <section className={styles.subsection}>
-          <h3 className={styles.heading2}>{"Some firsts"}</h3>
-          <ol>
-            <li>
-              {"My business became an LLC called Design is a Party, LLC!"}
-            </li>{" "}
-            <li>
-              {
-                "I conquered a bunch of paperwork and became an approved educator with a Bay Area charter school network."
-              }
-            </li>{" "}
-          </ol>
-        </section>
       </section>
       <hr className={styles.divider}></hr>
       <section className={styles.section}>
