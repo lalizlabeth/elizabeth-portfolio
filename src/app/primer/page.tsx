@@ -8,8 +8,8 @@ export default function Primer() {
     <PageLayout
       title="A learning community for kids"
       subtitle="Primer, 2022"
-      imageSrc="/art-of-visual-design/header.png"
-      imageAlt="Learning platform for The Art of Visual Design"
+      imageSrc="/primer/header.png"
+      imageAlt="Designs from Primer's room experience"
     >
       <section className={styles.section}>
         <h2 className={styles.heading1}>Overview</h2>
