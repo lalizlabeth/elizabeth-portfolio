@@ -130,6 +130,12 @@ export default function Home() {
                 link="https://www.templatesbyliz.com/"
                 tooltip="I make Notion templates sometimes!"
               ></ExperienceRow>
+              <ExperienceRow
+                title="What we can learn from Neopets"
+                subtitle="2023"
+                link="https://www.figma.com/proto/trrEXpOenNuxBnv0qCPjpw/%E2%9C%A8-What-we-can-learn-from-Neopets?page-id=0%3A1&node-id=2-2&viewport=415%2C514%2C0.02&t=hfDXJgmWxzAsrEqJ-1&scaling=contain&content-scaling=fixed/"
+                tooltip="I learned everything I know from Neopets"
+              ></ExperienceRow>
             </ol>
           </section>
         </section>
