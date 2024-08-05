@@ -59,7 +59,7 @@ export default function Home() {
                 title="Learning the why"
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/learning-the-why/"
-                tooltip="📄 Blog: How to teach design reasoning"
+                tooltip="📄 Blog: Thoughts on teaching design reasoning"
               ></ExperienceRow>
             </ol>
           </section>

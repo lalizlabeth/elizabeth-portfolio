@@ -100,7 +100,7 @@ export default function LambdaSchool() {
             </blockquote>
             <p>
               {
-                "It was a sensitive topic because I had prove that the first 4 months of core instruction needed a complete overhaul. We interviewed design managers at top companies in the industry and validated that our students needed to: "
+                "It was a sensitive topic because I had to prove that the first 4 months of core instruction needed a complete overhaul. We interviewed design managers at top companies in the industry and validated that our students needed to: "
               }
             </p>
             <ol>
