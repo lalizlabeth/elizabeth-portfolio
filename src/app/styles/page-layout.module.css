@@ -68,12 +68,17 @@
 .section p,
 .section li {
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.8;
   text-wrap: pretty;
 }
 
-.section li {
+.section li,
+.subsection li {
   margin-bottom: 6px;
+}
+
+.subsection li:last-child {
+  margin-bottom: 0;
 }
 
 .inlineLink {
