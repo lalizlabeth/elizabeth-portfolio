@@ -36,7 +36,7 @@ export default function Home() {
     <main className={styles.main}>
       <header className={styles.pageHeader}>
         <h1>Elizabeth Lin</h1>
-        <h2>Product Design Leader &amp; Educator</h2>
+        <h2>Product Design Manager &amp; Educator</h2>
       </header>
       <section className={styles.content}>
         <section className={styles.experience}>
@@ -135,7 +135,7 @@ export default function Home() {
             </Link>
             <p>
               {
-                "My name is Elizabeth! I'm a product design leader and educator with more than a decade of experience."
+                "My name is Elizabeth! I'm a product design manager and educator with more than a decade of experience."
               }
             </p>{" "}
             <p>

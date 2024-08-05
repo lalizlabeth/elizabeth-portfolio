@@ -144,6 +144,11 @@ export default function LambdaSchool() {
                 {"Creating learning communities"}
               </Link>
             </li>
+            <li>
+              <Link href="https://elpha.com/posts/2i48449s/designing-remote-learning-communities">
+                {"Designing remote learning communities for Elpha"}
+              </Link>
+            </li>
           </ul>
         </section>
       </section>
