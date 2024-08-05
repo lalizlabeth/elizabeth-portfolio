@@ -1,0 +1,71 @@
+/* layout */
+.main {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.headerSubtitle {
+  color: var(--color-black60);
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* navigation */
+.homeLink {
+  color: var(--color-pink);
+  font-family: var(--font-monospace);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  border-bottom: 1px solid var(--color-pink);
+  font-style: italic;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* typography */
+.heading1 {
+  color: var(--color-black);
+  font-size: 32px;
+}
+
+.section p,
+.section li {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 4px;
+}
+
+.links a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: var(--color-pink);
+  font-style: italic;
+}

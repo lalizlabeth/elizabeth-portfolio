@@ -22,7 +22,7 @@ type ExperienceRowProps = {
 function ExperienceRow(props: ExperienceRowProps) {
   return (
     <li className={styles.experienceLineItem}>
-      <Link href={`${props.link}`}>
+      <Link href={`${props.link}`} className={styles.link}>
         <Tooltip text={`${props.tooltip}`}></Tooltip>
         <h4 className={styles.title}>↗ {props.title}</h4>
         <h4 className={styles.subtitle}>{props.subtitle}</h4>
@@ -44,7 +44,7 @@ export default function Home() {
             <h3>Teaching &amp; mentorship</h3>
             <ol>
               <ExperienceRow
-                title="Building The Art of Visual Design"
+                title="Founding The Art of Visual Design"
                 subtitle="Design is a Party, 2023"
                 link="/art-of-visual-design"
                 tooltip="This is what I most recently worked on!"
@@ -53,7 +53,7 @@ export default function Home() {
                 title="Creating design opportunities"
                 subtitle="Primer, 2021"
                 link="https://designisaparty.com/creating-community/"
-                tooltip="A blog post about design internships"
+                tooltip="📄 Blog: Making opportunities for young designers"
               ></ExperienceRow>
               <ExperienceRow
                 title="Learning the why"
@@ -69,7 +69,7 @@ export default function Home() {
               <ExperienceRow
                 title="Training the next generation of designers"
                 subtitle="Lambda School, 2020"
-                link="/art-of-visual-design"
+                link="/lambda-school"
                 tooltip="Some work I'm the most proud of 🥹"
               ></ExperienceRow>
               <ExperienceRow
@@ -86,7 +86,7 @@ export default function Home() {
               <ExperienceRow
                 title="A learning community for kids"
                 subtitle="Primer, 2022"
-                link="/"
+                link="/primer"
                 tooltip="The most fun I've had working on a product ✨"
               ></ExperienceRow>
               <ExperienceRow
@@ -130,7 +130,7 @@ export default function Home() {
         <section className={styles.backstory}>
           <section className={styles.experienceGroup}>
             <h3>My backstory</h3>
-            <Link href="/ElizabethLinResume2024.pdf">
+            <Link className={styles.link} href="/ElizabethLinResume2024.pdf">
               <h4 className={styles.title}>↗ Resume</h4>
             </Link>
             <p>
@@ -140,7 +140,10 @@ export default function Home() {
             <p>
               I also write about my musings on design mentorship and education
               on my blog{" "}
-              <Link href="designisaparty.com">design is a party</Link>.
+              <Link href="designisaparty.com" className={styles.link}>
+                design is a party
+              </Link>
+              .
             </p>
           </section>
         </section>

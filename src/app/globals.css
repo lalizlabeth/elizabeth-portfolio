@@ -99,16 +99,21 @@ h2 {
   color: var(--color-black60);
   font-style: italic;
 }
-
 h3,
 h4,
 h5 {
   font-family: var(--font-monospace);
   font-weight: 400;
 }
-
+li,
 p {
   font-family: var(--font-monospace);
+}
+
+h3,
+li,
+p {
+  font-size: 15px;
 }
 
 main {

@@ -2,12 +2,10 @@ import PageLayout from "../components/PageLayout";
 import styles from "../styles/page-layout.module.css";
 import Link from "next/link";
 
-export default function ArtofVisualDesign() {
+export default function Primer() {
   return (
-    <PageLayout
-      title="Founding The Art of Visual Design"
-      subtitle="Design is a Party, 2023"
-    >
+    <PageLayout>
+      <h1>A learning community for kids</h1>
       <section className={styles.section}>
         <p>In 2023, I left my full-time job to see if I could do two things:</p>
         <ol>
@@ -26,24 +24,6 @@ export default function ArtofVisualDesign() {
             ↗ {""}
             <Link href="https://www.artofvisualdesign.com/">
               {"The Art of Visual Design (Elizabeth's Version)"}
-            </Link>
-          </li>
-          <li>
-            ↗ {""}
-            <Link href="https://designisaparty.com/lalizlabeth-graphix/">
-              {"It all started with lalizlabeth graphix"}
-            </Link>
-          </li>
-          <li>
-            ↗ {""}
-            <Link href="https://designisaparty.com/how-to-teach/">
-              {"How to teach everything without being everywhere all at once"}
-            </Link>
-          </li>
-          <li>
-            ↗ {""}
-            <Link href="https://designisaparty.com/saturns-return/">
-              {"Saturn has returned: A new design school"}
             </Link>
           </li>
         </ul>
