@@ -119,6 +119,12 @@ export default function Home() {
                 tooltip="Typography for $1000!"
               ></ExperienceRow>
               <ExperienceRow
+                title="GUIS through Art History"
+                subtitle="2021"
+                link="/guis-through-art-history"
+                tooltip="An experimental course I taught through Hyperlink"
+              ></ExperienceRow>
+              <ExperienceRow
                 title="Notion templates designed by me"
                 subtitle="2023"
                 link="https://www.templatesbyliz.com/"
