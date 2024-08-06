@@ -86,7 +86,7 @@ export default function ArtofVisualDesign() {
               {" and "}{" "}
               <Link
                 className={styles.inlineLink}
-                href="https://www.tiktok.com/@lalizlabeth.design"
+                href="https://www.instagram.com/lalizlabeth.design/"
               >
                 Instagram
               </Link>
