@@ -18,9 +18,9 @@ export default function Primer() {
             <Link className={styles.inlineLink} href="https://primer.com/">
               Primer
             </Link>{" "}
-            is an education startup with a mission to change the education
-            system from the ground up. I joined Primer as the 1st designer and
-            built the design team from the ground up!
+            is a startup with a mission to change the education system from the
+            ground up. I joined Primer as the 1st designer and built the design
+            team from scratch!
           </p>
           <ol>
             <li>
@@ -29,7 +29,14 @@ export default function Primer() {
               }
             </li>
             <li>
-              {"Managed Primer’s internship program and the design team."}
+              {"Managed Primer’s design team and"}{" "}
+              <Link
+                href="https://designisaparty.com/creating-opportunities/"
+                className={styles.inlineLink}
+              >
+                internship program
+              </Link>
+              .
             </li>
             <li>
               {
@@ -38,12 +45,12 @@ export default function Primer() {
             </li>{" "}
             <li>
               {
-                "Collaborated with a brand studio for the Primer rebrand and logo redesign initiatives."
+                "Partnered with a brand studio for the Primer rebrand and logo redesign initiatives."
               }
             </li>
             <li>
               {
-                "Cultivated team culture during the pandemic by organizing remote-friendly events like lightning talks, birthday parties, and game sessions."
+                "Cultivated company culture during the pandemic by organizing remote-friendly events like lightning talks, birthday parties, and game sessions."
               }
             </li>
           </ol>
@@ -127,7 +134,7 @@ export default function Primer() {
         ></video>{" "}
         <p>
           {
-            "With this experiment, we also modified the structure of clubs to have more structure including daily art prompts, required feedback cycles, and organized art swaps."
+            "With this experiment, we modified the structure of clubs to have more structure including daily art prompts, required feedback cycles, and organized art swaps."
           }
         </p>
       </section>
@@ -137,7 +144,7 @@ export default function Primer() {
         </h3>
         <p>
           {
-            "We wanted to empower our students to feel like they had ownership over the online community! One of the first projects I led was a custom background editor that used CSS. The vision was to eventually make the editor into an educational experience similar to how Neopets personally taught me CSS 😇."
+            "We wanted to empower our students to feel like they had ownership over the online community! In fact, Primer's motto's was 'Take kids seriously.' One of the first projects I led was a custom background editor that used CSS. The vision was to eventually make the editor into an educational experience similar to how Neopets personally taught me CSS 😇."
           }
         </p>
         <video
@@ -185,7 +192,7 @@ export default function Primer() {
         </h3>
         <p>
           {
-            "It was hard to find screenshots, but I established the Primer team's design process, user research, and set the bar for design quality. Everyone on the team had a basic understanding of Figma and was able to create mock ups using our design library!"
+            "I established the Primer's design process, user research, and set the bar for design quality. Everyone on the team had a basic understanding of Figma and was able to create mock ups using our design library!"
           }
         </p>
         <p>
@@ -208,7 +215,7 @@ export default function Primer() {
         </h3>
         <p>
           {
-            "One of the best parts about working at Primer was that we could ask students to design merch for us. I think we had some of the best company swag our there 😈."
+            "One of the best parts about working at Primer was that we worked with students to design our merch. I think we had some of the best company swag our there 😈."
           }
         </p>{" "}
         <Image

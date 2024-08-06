@@ -63,7 +63,7 @@ export default function LambdaSchool() {
             <li>
               <strong>{"Experiential Learning, Labs (4 months): "}</strong>
               {
-                "The goal of the experiential learning team was to give students hands-on, real world experience. Students worked in teams of 4-5 to build apps for real stakeholders and clients. During their time in the Labs program, they would complete two projects for their portfolio."
+                "The goal of the experiential learning team was to give students hands-on, real world experience. Students worked in teams of 4-5 to build apps for real clients. During their time in the Labs program, they would complete two projects for their portfolio."
               }
             </li>
             <li>
@@ -188,7 +188,9 @@ export default function LambdaSchool() {
             autoPlay
           ></video>{" "}
           <p>
-            {"I also wrote about my visual design lessons in"}{" "}
+            {
+              "After exercises like these, students created higher quality interfaces and were able to explain their reasoning. I also wrote about my visual design lessons in"
+            }{" "}
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/learning-playgrounds/"
@@ -297,12 +299,14 @@ export default function LambdaSchool() {
           <h3 className={styles.heading2}>Design Day!</h3>
           <p>
             {
-              "We wanted to improve student morale as they reached the end of the program. I led an initiative to host a mini conference called “Design Day” to inspire them creatively. We received a small budget of $500 from the leadership team to cover costs. The day consisted of:"
+              "Breaking into the design industry can be intimidating even for skilled designers! We wanted to motivate students as they reached the end of the program. I led an initiative to host a mini conference called “Design Day” to inspire them creatively. We received a small budget of $500 from the leadership team to cover costs. The day consisted of:"
             }
           </p>
           <ol>
-            <li>Joyfully subvert the status quo, May-Li Khoe</li>
-            <li>Designing for blue sky, Shawn Park</li>
+            <li>
+              Joyfully subvert the status quo, May-Li Khoe: Apple, Khan Academy
+            </li>
+            <li>Designing for blue sky, Shawn Park: Discord</li>
             <li>
               Design internship panel featuring interns from Microsoft, Best
               Buy, and Asana

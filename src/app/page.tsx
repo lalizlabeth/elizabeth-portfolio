@@ -47,13 +47,13 @@ export default function Home() {
                 title="Founding The Art of Visual Design"
                 subtitle="Design is a Party, 2023"
                 link="/art-of-visual-design"
-                tooltip="This is what I most recently worked on!"
+                tooltip="This is what I am working on now!"
               ></ExperienceRow>
               <ExperienceRow
                 title="Training the next generation of designers"
                 subtitle="Lambda School, 2020"
                 link="/lambda-school"
-                tooltip="Some work I'm the most proud of 🥹"
+                tooltip="Some of my proudest work 🥹"
               ></ExperienceRow>
               <ExperienceRow
                 title="Learning the why"
@@ -64,30 +64,13 @@ export default function Home() {
             </ol>
           </section>
           <section className={styles.experienceGroup}>
-            <h3>Process &amp; systems design</h3>
-            <ol>
-              <ExperienceRow
-                title="Creating design opportunities"
-                subtitle="Primer, 2021"
-                link="https://designisaparty.com/creating-opportunities/"
-                tooltip="📄 Blog: How we found a Primer design intern"
-              ></ExperienceRow>
-              <ExperienceRow
-                title="Scalable feedback systems"
-                subtitle="Lambda School, 2020"
-                link="https://designisaparty.com/scaling-feedback/"
-                tooltip="📄 Blog: How I built feedback systems for 100 students"
-              ></ExperienceRow>
-            </ol>
-          </section>
-          <section className={styles.experienceGroup}>
             <h3>Product &amp; Craft</h3>
             <ol>
               <ExperienceRow
                 title="A learning community for kids"
-                subtitle="Primer, 2022"
+                subtitle="Primer, 2020-2023"
                 link="/primer"
-                tooltip="I learned a lot as the founding designer on this team 🫡"
+                tooltip="I learned a lot as the founding designer on this team!"
               ></ExperienceRow>
               <ExperienceRow
                 title="Who defines good taste?"
@@ -100,6 +83,23 @@ export default function Home() {
                 subtitle="2015-2020"
                 link="https://www.elizabethylin.com"
                 tooltip="I still love the portfolio design, but pls tread with caution 😇"
+              ></ExperienceRow>
+            </ol>
+          </section>
+          <section className={styles.experienceGroup}>
+            <h3>Process &amp; systems design</h3>
+            <ol>
+              <ExperienceRow
+                title="Creating design opportunities"
+                subtitle="Primer, 2020"
+                link="https://designisaparty.com/creating-opportunities/"
+                tooltip="📄 Blog: How we found a Primer design intern"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Scalable feedback systems"
+                subtitle="Lambda School, 2020"
+                link="https://designisaparty.com/scaling-feedback/"
+                tooltip="📄 Blog: How I built feedback systems for 100+ students"
               ></ExperienceRow>
             </ol>
           </section>

@@ -15,7 +15,7 @@ export default function ArtofVisualDesign() {
         <h2 className={styles.heading1}>Overview</h2>
         <section className={styles.subsection}>
           <p>
-            In March 2023, I left my full-time job to see if I could do two
+            In March 2023, I left my full-time job to prove I could do two
             things:
           </p>
           <ol>
@@ -25,7 +25,7 @@ export default function ArtofVisualDesign() {
 
           <p>
             {
-              "And I did it 😇! In Nov 2023, I launched a self-paced and interactive 2-course series called"
+              "Now, I'm proud to say that I accomplished both 😇! In Nov 2023, I launched a self-paced and interactive 2-course series called"
             }{" "}
             <Link
               className={styles.inlineLink}
@@ -109,7 +109,7 @@ export default function ArtofVisualDesign() {
             <li>
               <strong>Technique:</strong>{" "}
               {
-                "How do you make your ideas come to life? Execution should not be a blocker to your ideas. If you have an idea in your head, you should be able to create it in your design tool of choice in an effective way."
+                "How do you make your ideas come to life? Execution should not be a blocker to your ideas. If you have an idea in your head, you should be able to make it a reality efficiently."
               }
             </li>
             <li>
@@ -238,6 +238,22 @@ export default function ArtofVisualDesign() {
             ></iframe>
           </div>
         </section>
+        <section className={styles.subsection}>
+          <h3 className={styles.heading2}>Some words from the students</h3>
+          <p>
+            My students come from all different backgrounds! Designers of all
+            levels, product managers, founders, and design students are all
+            members of the community.
+          </p>
+          <Image
+            src="/art-of-visual-design/testimonials.png"
+            alt="Some notes from the students"
+            width={0}
+            height={0}
+            unoptimized={true}
+            style={{ width: "100%", height: "100%" }}
+          ></Image>
+        </section>
       </section>
       <hr className={styles.divider}></hr>
       <section className={styles.section}>
@@ -247,6 +263,12 @@ export default function ArtofVisualDesign() {
             ↗ {""}
             <Link href="https://www.artofvisualdesign.com/">
               {"The Art of Visual Design (Elizabeth's Version)"}
+            </Link>
+          </li>
+          <li>
+            ↗ {""}
+            <Link href="https://designisaparty.com/saturns-return/">
+              {"Saturn has returned: A new design school"}
             </Link>
           </li>
           <li>
@@ -265,12 +287,6 @@ export default function ArtofVisualDesign() {
             ↗ {""}
             <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw">
               {"Educational long-form videos"}
-            </Link>
-          </li>
-          <li>
-            ↗ {""}
-            <Link href="https://designisaparty.com/saturns-return/">
-              {"Saturn has returned: A new design school"}
             </Link>
           </li>
         </ul>
