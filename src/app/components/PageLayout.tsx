@@ -27,7 +27,11 @@ export default function PageLayout(props: PageLayoutProps) {
           width={0}
           height={0}
           unoptimized={true}
-          style={{ width: "100%", height: "100%" }}
+          style={{
+            width: "100%",
+            height: "100%",
+            background: "white",
+          }}
         ></Image>
       </header>
       {props.children}
