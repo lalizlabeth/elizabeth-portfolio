@@ -188,7 +188,7 @@ export default function Home() {
             <h4 className={styles.title}>TikTok</h4>
           </Link>{" "}
           ·
-          <Link href="https://www.tiktok.com/@lalizlabeth.design">
+          <Link href="https://www.instagram.com/lalizlabeth.design/">
             <h4 className={styles.title}>Instagram</h4>
           </Link>
           ·
