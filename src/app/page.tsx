@@ -45,7 +45,7 @@ export default function Home() {
             <ol>
               <ExperienceRow
                 title="Founding The Art of Visual Design"
-                subtitle="Design is a Party, 2023"
+                subtitle="Design is a Party, 2023-2024"
                 link="/art-of-visual-design"
                 tooltip="This is what I am working on now!"
               ></ExperienceRow>
