@@ -147,7 +147,7 @@ export default function Home() {
             </Link>
             <p>
               {
-                "My name is Elizabeth! I'm a product design manager and educator with more than a decade of experience."
+                "My name is Elizabeth! I'm a product design manager and educator with over a decade of experience."
               }
             </p>{" "}
             <p>
