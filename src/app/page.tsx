@@ -110,19 +110,19 @@ export default function Home() {
                 title="An educational font guessing game"
                 subtitle="2023"
                 link="https://www.artofvisualdesign.com/fontguessr"
-                tooltip="Try to get Typography Titan 😉!"
+                tooltip="Are you a Typography Titan? 😉"
               ></ExperienceRow>
               <ExperienceRow
                 title="Jeopardy run by Figma variables"
                 subtitle="2023"
                 link="https://www.figma.com/community/file/1258765867218511354/figma-jeopardy"
-                tooltip="Typography for $1000!"
+                tooltip="I'll take Typography for $1000!"
               ></ExperienceRow>
               <ExperienceRow
                 title="GUIS through art history"
                 subtitle="2021"
                 link="/guis-through-art-history"
-                tooltip="How can art movements like Rococo and Surrealism push our UI design?"
+                tooltip="I taught a class exploring interfaces inspired by Rococo and Surrealism"
               ></ExperienceRow>
               <ExperienceRow
                 title="Notion templates designed by me"
