@@ -48,6 +48,19 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Elizabeth Lin: Product Design Manager & Educator",
+    description:
+      "Building an alternative design school. Previously at Primer, Lambda School, & Khan Academy",
+    images: [
+      {
+        url: "https://lalizlabeth.com/og-image.png", // Must be an absolute URL
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
