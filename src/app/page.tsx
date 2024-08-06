@@ -154,7 +154,10 @@ export default function Home() {
               {
                 "I'm currently building an alternative design school starting with"
               }{" "}
-              <Link className={styles.inlineLink} href="artofvisualdesign.com">
+              <Link
+                className={styles.inlineLink}
+                href="https://www.artofvisualdesign.com/"
+              >
                 {"↗ The Art of Visual Design (Elizabeth's Version)"}
               </Link>
               {
