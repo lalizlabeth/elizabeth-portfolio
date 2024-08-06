@@ -47,21 +47,21 @@ export default function ArtofVisualDesign() {
               <strong>{"1,500+ downloads "}</strong>
               {" on my digitally published resources: "}
               <Link
-                href="templatesbyliz.com/portfolio"
+                href="https://www.templatesbyliz.com/portfolio"
                 className={styles.inlineLink}
               >
                 {"Elizabeth’s Portfolio Guide"}
               </Link>
               ,{" "}
               <Link
-                href="templatesbyliz.com/job-tracker"
+                href="https://www.templatesbyliz.com/job-tracker"
                 className={styles.inlineLink}
               >
                 {"Elizabeth’s Job Tracker"}
               </Link>
               , and{" "}
               <Link
-                href="templatesbyliz.com/product-design"
+                href="https://www.templatesbyliz.com/product-design"
                 className={styles.inlineLink}
               >
                 {"Elizabeth’s Declassified Guide to Product Design"}
@@ -150,7 +150,7 @@ export default function ArtofVisualDesign() {
           <p>
             {"My teaching philosophy is centered around "}
             <Link
-              href="designisaparty.com/learning-playgrounds"
+              href="https://designisaparty.com/learning-playgrounds/"
               className={styles.inlineLink}
             >
               {"learning playgrounds"}
