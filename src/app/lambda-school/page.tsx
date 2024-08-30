@@ -96,7 +96,7 @@ export default function LambdaSchool() {
               }
             </p>
             <blockquote className={styles.blockquote}>
-              The UX students did not have the skills they needed to jobs.
+              The UX students did not have the skills they needed to land jobs.
             </blockquote>
             <p>
               {
