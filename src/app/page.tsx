@@ -106,6 +106,18 @@ export default function Home() {
           <section className={styles.experienceGroup}>
             <h3>Just for fun</h3>
             <ol>
+            <ExperienceRow
+                title="Discover your design aesthetic quiz"
+                subtitle="2024"
+                link="https://www.artofvisualdesign.com/aesthetic-quiz"
+                tooltip="The stars will reveal your design aesthetic~"
+              ></ExperienceRow>
+                          <ExperienceRow
+                title="Reveal your design destiny"
+                subtitle="2024"
+                link="https://www.artofvisualdesign.com/crystal-ball"
+                tooltip="Let my crystal ball tell you waht to design next!"
+              ></ExperienceRow>
               <ExperienceRow
                 title="An educational font guessing game"
                 subtitle="2023"
