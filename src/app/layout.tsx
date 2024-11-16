@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Alegreya } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
 
 const alegreya = Alegreya({
   weight: "400",
@@ -78,6 +79,7 @@ export default function RootLayout({
           content="elizabeth lin, lalizlabeth, product design, product design manager, educator, leader, khan academy, lambda school, primer, mentorship"
         />
       </Head>
+      <Analytics />
       <body className={`${alegreya.variable} ${ibm_plex_mono.variable}`}>
         {children}
       </body>
