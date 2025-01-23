@@ -36,7 +36,7 @@ export default function Home() {
     <main className={styles.main}>
       <header className={styles.pageHeader}>
         <h1>Elizabeth Lin</h1>
-        <h2>Product Design Manager &amp; Educator</h2>
+        <h2>Product Designer &amp; Educator</h2>
       </header>
       <section className={styles.content}>
         <section className={styles.experience}>
