@@ -58,7 +58,7 @@ export default function Home() {
               <ExperienceRow
                 title="Learning the why"
                 subtitle="Lambda School, 2020"
-                link="https://designisaparty.com/learning-the-why/"
+                link="https://designisaparty.com/blog/learning-the-why/"
                 tooltip="📄 Blog: Thoughts on teaching design reasoning"
               ></ExperienceRow>
             </ol>
@@ -75,7 +75,7 @@ export default function Home() {
               <ExperienceRow
                 title="Who defines good taste?"
                 subtitle="Lambda School, 2020"
-                link="https://designisaparty.com/who-defines-taste/"
+                link="https://designisaparty.com/blog/who-defines-taste/"
                 tooltip="📄 Yet another blog post, this one about taste"
               ></ExperienceRow>
               <ExperienceRow
@@ -92,13 +92,13 @@ export default function Home() {
               <ExperienceRow
                 title="Creating design opportunities"
                 subtitle="Primer, 2020"
-                link="https://designisaparty.com/creating-opportunities/"
+                link="https://designisaparty.com/blog/creating-opportunities/"
                 tooltip="📄 Blog: How we found a Primer design intern"
               ></ExperienceRow>
               <ExperienceRow
                 title="Scalable feedback systems"
                 subtitle="Lambda School, 2020"
-                link="https://designisaparty.com/scaling-feedback/"
+                link="https://designisaparty.com/blog/  scaling-feedback/"
                 tooltip="📄 Blog: How I built feedback systems for 100+ students"
               ></ExperienceRow>
             </ol>
@@ -187,7 +187,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <h3>Elsewhere on the internet</h3>
         <section className={styles.links}>
-          <Link href="https://designisaparty.com/">
+          <Link href="https://designisaparty.com/blog">
             <h4 className={styles.title}>Blog</h4>
           </Link>
           ·
