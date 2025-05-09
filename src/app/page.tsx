@@ -43,11 +43,17 @@ export default function Home() {
           <section className={styles.experienceGroup}>
             <h3>Teaching &amp; mentorship</h3>
             <ol>
+            <ExperienceRow
+                title="Prototyping with Cursor"
+                subtitle="Design is a Party, 2025"
+                link="https://designisaparty.com/prototyping"
+                tooltip="This is what I am working on now!"
+              ></ExperienceRow>
               <ExperienceRow
                 title="Founding The Art of Visual Design"
                 subtitle="Design is a Party, 2023-2024"
                 link="/art-of-visual-design"
-                tooltip="This is what I am working on now!"
+                tooltip="300+ students have enrolled!"
               ></ExperienceRow>
               <ExperienceRow
                 title="Training the next generation of designers"
@@ -60,6 +66,12 @@ export default function Home() {
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/blog/learning-the-why/"
                 tooltip="📄 Blog: Thoughts on teaching design reasoning"
+              ></ExperienceRow>
+                            <ExperienceRow
+                title="Designing interfaces for connection"
+                subtitle="Type Electives, 2025"
+                link="https://designisaparty.com/designing-interfaces-for-connection/"
+                tooltip="A class I taught about exploring chat interfaces"
               ></ExperienceRow>
             </ol>
           </section>

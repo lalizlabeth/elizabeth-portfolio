@@ -19,7 +19,7 @@ const ibm_plex_mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elizabeth Lin: Product Design Manager & Educator",
+  title: "Elizabeth Lin: Product Designer & Educator",
   description:
     "Building an alternative design school. Previously at Primer, Lambda School, & Khan Academy",
   keywords: [
@@ -34,11 +34,11 @@ export const metadata: Metadata = {
     "mentorship",
   ],
   openGraph: {
-    title: "Elizabeth Lin: Product Design Manager & Educator",
+    title: "Elizabeth Lin: Product Designer & Educator",
     description:
       "Building an alternative design school. Previously at Primer, Lambda School, & Khan Academy",
     url: "https://lalizlabeth.com",
-    siteName: "Elizabeth Lin: Product Design Manager & Educator",
+    siteName: "Elizabeth Lin: Product Designer & Educator",
     images: [
       {
         url: "https://lalizlabeth.com/og-image.png", // Must be an absolute URL
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elizabeth Lin: Product Design Manager & Educator",
+    title: "Elizabeth Lin: Product Designer & Educator",
     description:
       "Building an alternative design school. Previously at Primer, Lambda School, & Khan Academy",
     images: [
