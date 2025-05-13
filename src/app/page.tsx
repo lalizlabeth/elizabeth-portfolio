@@ -110,7 +110,7 @@ export default function Home() {
               <ExperienceRow
                 title="Scalable feedback systems"
                 subtitle="Lambda School, 2020"
-                link="https://designisaparty.com/blog/  scaling-feedback/"
+                link="https://designisaparty.com/blog/scaling-feedback/"
                 tooltip="📄 Blog: How I built feedback systems for 100+ students"
               ></ExperienceRow>
             </ol>
