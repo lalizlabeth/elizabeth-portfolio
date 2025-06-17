@@ -182,18 +182,8 @@ export default function Home() {
             </p>{" "}
             <p>
               {
-                "I'm currently building an alternative design school starting with"
-              }{" "}
-              <Link
-                className={styles.inlineLink}
-                href="https://www.artofvisualdesign.com/"
-              >
-                {"↗ The Art of Visual Design (Elizabeth's Version)"}
-              </Link>
-              {
-                ". Previously, I worked at companies like Khan Academy, Primer, and Lambda School."
-              }
-            </p>{" "}
+                "I'm currently building an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link>.
+            </p>
             <p>
               {
                 "Outside of design, I love talking about Alexander McQueen, judging people's reading lists, and playing classical saxophone."
