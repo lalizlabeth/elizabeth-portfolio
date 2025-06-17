@@ -55,6 +55,12 @@ export default function Home() {
                 link="/art-of-visual-design"
                 tooltip="300+ students have enrolled!"
               ></ExperienceRow>
+                            <ExperienceRow
+                title="How I AI"
+                subtitle="2025"
+                link="https://www.youtube.com/watch?v=zQkFJNj-2lw&lc=UgzCeLdbexHx8qdkMap4AaABAg"
+                tooltip="My first podcast episode!"
+              ></ExperienceRow>
               <ExperienceRow
                 title="Training the next generation of designers"
                 subtitle="Lambda School, 2020"
