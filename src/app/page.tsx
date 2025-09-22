@@ -43,7 +43,7 @@ export default function Home() {
           <section className={styles.experienceGroup}>
             <h3>Teaching &amp; mentorship</h3>
             <ol>
-            <ExperienceRow
+              <ExperienceRow
                 title="Prototyping with Cursor"
                 subtitle="Design is a Party, 2025"
                 link="https://designisaparty.com/prototyping"
@@ -55,7 +55,7 @@ export default function Home() {
                 link="/art-of-visual-design"
                 tooltip="300+ students have enrolled!"
               ></ExperienceRow>
-                            <ExperienceRow
+              <ExperienceRow
                 title="How I AI"
                 subtitle="2025"
                 link="https://www.youtube.com/watch?v=zQkFJNj-2lw&lc=UgzCeLdbexHx8qdkMap4AaABAg"
@@ -73,7 +73,7 @@ export default function Home() {
                 link="https://designisaparty.com/blog/learning-the-why/"
                 tooltip="📄 Blog: Thoughts on teaching design reasoning"
               ></ExperienceRow>
-                            <ExperienceRow
+              <ExperienceRow
                 title="Designing interfaces for connection"
                 subtitle="Type Electives, 2025"
                 link="https://designisaparty.com/designing-interfaces-for-connection/"
@@ -124,13 +124,19 @@ export default function Home() {
           <section className={styles.experienceGroup}>
             <h3>Just for fun</h3>
             <ol>
-            <ExperienceRow
+              <ExperienceRow
+                title="Guess the Dupe"
+                subtitle="2025"
+                link="/guess-the-dupe"
+                tooltip="Can you spot the designer knockoff? A fun visual game!"
+              ></ExperienceRow>
+              <ExperienceRow
                 title="Discover your design aesthetic quiz"
                 subtitle="2024"
                 link="https://www.artofvisualdesign.com/aesthetic-quiz"
                 tooltip="The stars will reveal your design aesthetic~"
               ></ExperienceRow>
-                          <ExperienceRow
+              <ExperienceRow
                 title="Reveal your design destiny"
                 subtitle="2024"
                 link="https://www.artofvisualdesign.com/crystal-ball"
@@ -182,7 +188,7 @@ export default function Home() {
             </p>{" "}
             <p>
               {
-                "I'm currently building an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link>.
+                "I'm currently building an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link>. {"I primarily teach designers how to prototype with AI and improve their visual design skills. I'm also an adjunct professor at SVA."}
             </p>
             <p>
               {
