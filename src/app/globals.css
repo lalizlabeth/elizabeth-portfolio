@@ -14,12 +14,14 @@
 *::after {
   box-sizing: border-box;
 }
+
 /*
   2. Remove default margin
 */
 * {
   margin: 0;
 }
+
 /*
   Typographic tweaks!
   3. Add accessible line-height
@@ -29,6 +31,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 /*
   5. Improve media defaults
 */
@@ -40,6 +43,7 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 /*
   6. Remove built-in form typography styles
 */
@@ -49,6 +53,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /*
   7. Avoid text overflows
 */
@@ -61,6 +66,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 /*
   8. Create a root stacking context
 */
@@ -70,14 +76,12 @@ h6 {
 }
 
 body {
-  background: radial-gradient(
-    107.81% 212.88% at 0% 0%,
-    rgba(255, 155, 227, 0.4) 0%,
-    rgba(255, 252, 184, 0.4) 25%,
-    rgba(189, 252, 201, 0.4) 50%,
-    rgba(126, 247, 255, 0.4) 75%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: radial-gradient(107.81% 212.88% at 0% 0%,
+      rgba(255, 155, 227, 0.4) 0%,
+      rgba(255, 252, 184, 0.4) 25%,
+      rgba(189, 252, 201, 0.4) 50%,
+      rgba(126, 247, 255, 0.4) 75%,
+      rgba(255, 255, 255, 0) 100%);
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -92,19 +96,23 @@ h2 {
   line-height: 1.2;
   font-style: italic;
 }
+
 h1 {
   color: var(--color-black);
 }
+
 h2 {
   color: var(--color-black60);
   font-style: italic;
 }
+
 h3,
 h4,
 h5 {
   font-family: var(--font-monospace);
   font-weight: 400;
 }
+
 li,
 p {
   font-family: var(--font-monospace);
@@ -124,8 +132,27 @@ main {
 strong {
   font-weight: 700;
 }
+
+/* Pinyon Script - prevent fake bold and maintain regular weight */
+[style*="font-pinyon-script"] {
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Force regular weight for Pinyon Script elements */
+[style*="font-pinyon-script"] * {
+  font-weight: 400 !important;
+}
+
+[style*="font-pinyon-script"] strong,
+[style*="font-pinyon-script"] b {
+  font-weight: 400 !important;
+}
+
 /* Responsive */
 @media (max-width: 650px) {
+
   h1,
   h2 {
     font-size: 40px;

@@ -1,0 +1,495 @@
+/* Travel guides - completely different visual style */
+
+/* Reset/override global layout styles */
+.layoutReset {
+    background: url('/travel-guides/cloud-bg.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.layoutReset main {
+    max-width: none;
+    padding: 0;
+}
+
+.layoutReset::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4' numOctaves='40' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.20;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Animated plane */
+.layoutReset::after {
+    content: '';
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    background-image: url('/travel-guides/plane.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 1;
+    animation: flyPlane 25s linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes flyPlane {
+    0% {
+        left: 110%;
+        top: 10%;
+        transform: translateY(0px);
+    }
+
+    15% {
+        top: 25%;
+        transform: translateY(-20px);
+    }
+
+    30% {
+        top: 18%;
+        transform: translateY(15px);
+    }
+
+    45% {
+        top: 35%;
+        transform: translateY(-10px);
+    }
+
+    60% {
+        top: 28%;
+        transform: translateY(25px);
+    }
+
+    75% {
+        top: 40%;
+        transform: translateY(-15px);
+    }
+
+    90% {
+        top: 35%;
+        transform: translateY(10px);
+    }
+
+    100% {
+        left: -80px;
+        top: 45%;
+        transform: translateY(0px);
+    }
+}
+
+/* Override global typography */
+.layoutReset h1,
+.layoutReset h2,
+.layoutReset h3,
+.layoutReset h4,
+.layoutReset h5,
+.layoutReset h6 {
+    font-family: var(--font-bricolage);
+    font-weight: 600;
+    line-height: 0.9;
+    font-style: normal;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: transparent;
+    width: 100%;
+    padding: 60px 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    gap: 80px;
+}
+
+.layoutReset .guideWrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.title {
+    font-family: var(--font-bricolage);
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    text-transform: none;
+}
+
+.subtitle {
+    font-family: var(--font-monospace);
+    font-size: 14px;
+    color: #fff;
+    text-transform: none;
+    margin: 0;
+}
+
+.navLink {
+    color: #2c2c2c;
+    font-family: var(--font-monospace);
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: border-color 0.2s;
+    padding: 4px 16px;
+    border-radius: 100px;
+}
+
+/* Guide list */
+.guideList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.guideCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 309px;
+    height: 432px;
+    padding: 0;
+    flex-shrink: 0;
+    transition: transform 0.2s ease-out;
+    transition: border-radius 0.2s ease-out;
+}
+
+.guideCard:hover {
+    transform: scale(1.008);
+    border-radius: 40px;
+}
+
+.guideCard:hover img {
+    transition: transform 0.1s ease-out;
+    transform: scale(1.2);
+}
+
+.cardTitle {
+    position: absolute;
+    top: calc(50% - 173px);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: 800;
+    line-height: 49px;
+    margin: 0;
+    z-index: 1;
+    white-space: pre-line;
+}
+
+.cardImageWrapper {
+    position: absolute;
+    top: calc(50% + 42px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 264px;
+    height: 264px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.guideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+}
+
+.cardSubtitle {
+    position: absolute;
+    top: calc(50% + 181px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+/* Individual guide page */
+.guideCoverWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px;
+}
+
+.guideCoverTitle {
+    text-align: center;
+    font-weight: 800;
+    line-height: 0.95;
+}
+
+.guideCoverImageWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.guideCoverImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: none;
+    transition: transform 0.3s ease-out;
+}
+
+.guideCoverSubtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.guideContent {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    background: #fff;
+    padding: 60px 80px;
+}
+
+.featuredImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: none;
+}
+
+.markdownContent {
+    font-family: var(--font-monospace);
+    font-size: 16px;
+    line-height: 1.9;
+    color: #2c2c2c;
+    font-weight: 400;
+}
+
+.markdownContent h1,
+.markdownContent h2,
+.markdownContent h3,
+.markdownContent h4,
+.markdownContent h5,
+.markdownContent h6 {
+    font-family: var(--font-monospace);
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-top: 48px;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
+}
+
+.markdownContent h1 {
+    font-size: 36px;
+}
+
+.markdownContent h2 {
+    font-size: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 12px;
+}
+
+.markdownContent h3 {
+    font-size: 24px;
+}
+
+.markdownContent p {
+    margin-bottom: 20px;
+    text-wrap: pretty;
+}
+
+.markdownContent ul,
+.markdownContent ol {
+    margin-bottom: 20px;
+    padding-left: 28px;
+}
+
+.markdownContent li {
+    margin-bottom: 12px;
+}
+
+.markdownContent a {
+    color: #2c2c2c;
+    text-decoration: underline;
+    text-decoration-color: #999;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+}
+
+.markdownContent a:hover {
+    text-decoration-color: #2c2c2c;
+}
+
+.markdownContent img {
+    max-width: 100%;
+    height: auto;
+    margin: 40px 0;
+    border: none;
+}
+
+.markdownContent blockquote {
+    font-family: var(--font-monospace);
+    font-size: 18px;
+    padding: 0 0 0 24px;
+    border-left: 3px solid #ddd;
+    margin: 32px 0;
+    color: #666;
+    font-style: normal;
+}
+
+.markdownContent code {
+    font-family: var(--font-monospace);
+    font-size: 14px;
+    background: #e8e8e8;
+    padding: 2px 6px;
+    border-radius: 2px;
+}
+
+.markdownContent pre {
+    background: #e8e8e8;
+    padding: 20px;
+    border-radius: 2px;
+    overflow-x: auto;
+    margin: 32px 0;
+}
+
+.markdownContent pre code {
+    background: none;
+    padding: 0;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 60px 0;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+    .container {
+        padding: 80px 40px;
+        gap: 60px;
+    }
+
+    .guideList {
+        gap: 40px;
+    }
+
+    .guideCoverWrapper {
+        height: 600px;
+        margin-bottom: 60px;
+    }
+
+    .guideCoverTitle {
+        top: calc(50% - 240px);
+        font-size: 80px !important;
+    }
+
+    .guideCoverImageWrapper {
+        width: 420px;
+        height: 420px;
+    }
+
+    .guideCoverSubtitle {
+        top: calc(50% + 260px);
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 60px 24px;
+        gap: 48px;
+    }
+
+    .title {
+        font-size: 120px;
+    }
+
+    .guideTitle {
+        font-size: 24px;
+    }
+
+    .guideCoverWrapper {
+        height: 500px;
+        margin-bottom: 48px;
+    }
+
+    .guideCoverTitle {
+        top: calc(50% - 200px);
+        font-size: 60px !important;
+        line-height: 0.9;
+    }
+
+    .guideCoverImageWrapper {
+        width: 320px;
+        height: 320px;
+    }
+
+    .guideCoverSubtitle {
+        top: calc(50% + 210px);
+        font-size: 16px;
+    }
+}
