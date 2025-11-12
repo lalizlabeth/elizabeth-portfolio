@@ -17,11 +17,6 @@ export const metadata: Metadata = {
                 width: 2400,
                 height: 1260,
             },
-            {
-                url: "https://lalizlabeth.com/travel-guides/og-image.png",
-                width: 1200,
-                height: 630,
-            },
         ],
         locale: "en_US",
         type: "website",
