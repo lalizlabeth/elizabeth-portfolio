@@ -1,6 +1,44 @@
 import { getAllGuides } from "@/lib/travel-guides";
 import styles from "./travel-guides.module.css";
 import GuideCard from "./GuideCard";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Travel guides by @lalizlabeth",
+    description: "Personal travel guides with recommendations for Mexico City, Oaxaca, and more destinations.",
+    openGraph: {
+        title: "Travel guides by @lalizlabeth",
+        description: "Personal travel guides with recommendations for Mexico City, Oaxaca, and more destinations.",
+        url: "https://lalizlabeth.com/travel-guides",
+        siteName: "Elizabeth Lin: Product Designer & Educator",
+        images: [
+            {
+                url: "https://lalizlabeth.com/travel-guides/og-image@2x.png",
+                width: 2400,
+                height: 1260,
+            },
+            {
+                url: "https://lalizlabeth.com/travel-guides/og-image.png",
+                width: 1200,
+                height: 630,
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Travel guides by @lalizlabeth",
+        description: "Personal travel guides with recommendations for Mexico City, Oaxaca, and more destinations.",
+        images: [
+            {
+                url: "https://lalizlabeth.com/travel-guides/og-image@2x.png",
+                width: 2400,
+                height: 1260,
+            },
+        ],
+    },
+};
 
 export default async function TravelGuidesPage() {
     const guides = await getAllGuides();
