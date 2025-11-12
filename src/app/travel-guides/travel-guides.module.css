@@ -192,6 +192,10 @@
     transition: border-radius 0.2s ease-out;
 }
 
+.guideCard img {
+    transition: transform 0.1s ease-out;
+}
+
 .guideCard:hover {
     transform: scale(1.008);
     border-radius: 40px;
