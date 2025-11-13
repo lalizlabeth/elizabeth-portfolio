@@ -16,6 +16,9 @@ export type Guide = {
     country: string;
     featuredImage: string;
     content: string;
+    pageId: string;
+    featuredImagePropertyId?: string;
+    imageUrlBlockMap: Record<string, string>;
     // Card styling (optional - defaults provided)
     cardBackgroundColor?: string;
     cardTextColor?: string;
@@ -56,6 +59,64 @@ function extractFileUrl(property: any): string {
     return "";
 }
 
+async function collectImageUrlBlockMap(pageId: string): Promise<Record<string, string>> {
+    const map: Record<string, string> = {};
+
+    async function traverse(blockId: string) {
+        let cursor: string | undefined;
+
+        do {
+            const response = await notion.blocks.children.list({
+                block_id: blockId,
+                page_size: 100,
+                start_cursor: cursor,
+            });
+
+            for (const block of response.results) {
+                if (!("type" in block)) {
+                    continue;
+                }
+
+                if (block.type === "image") {
+                    const image = block.image;
+                    let url = "";
+
+                    if (image.type === "external") {
+                        url = image.external.url;
+                    } else if (image.type === "file") {
+                        url = image.file.url;
+                    }
+
+                    if (url) {
+                        map[url] = block.id;
+                    }
+                }
+
+                if ("has_children" in block && block.has_children) {
+                    let childBlockId = block.id;
+
+                    if (
+                        block.type === "synced_block" &&
+                        block.synced_block &&
+                        block.synced_block.synced_from &&
+                        block.synced_block.synced_from.block_id
+                    ) {
+                        childBlockId = block.synced_block.synced_from.block_id;
+                    }
+
+                    await traverse(childBlockId);
+                }
+            }
+
+            cursor = response.has_more ? response.next_cursor ?? undefined : undefined;
+        } while (cursor);
+    }
+
+    await traverse(pageId);
+
+    return map;
+}
+
 // Convert Notion page to Guide
 async function notionPageToGuide(page: any): Promise<Guide> {
     const properties = page.properties;
@@ -69,8 +130,12 @@ async function notionPageToGuide(page: any): Promise<Guide> {
     const cardTitleFont = extractPlainText(properties.cardTitleFont);
     const cardSubtitleFont = extractPlainText(properties.cardSubtitleFont);
 
+    const featuredImagePropertyId = properties.featuredImage?.id;
+
     // Create slug from title
     const slug = title.toLowerCase().replace(/\s+/g, "-");
+
+    const imageUrlBlockMap = await collectImageUrlBlockMap(page.id);
 
     // Fetch page content
     const n2m = new NotionToMarkdown({ notionClient: notion });
@@ -83,6 +148,9 @@ async function notionPageToGuide(page: any): Promise<Guide> {
         country,
         featuredImage,
         content,
+        pageId: page.id,
+        featuredImagePropertyId,
+        imageUrlBlockMap,
         cardBackgroundColor,
         cardTextColor,
         cardTitleFont,

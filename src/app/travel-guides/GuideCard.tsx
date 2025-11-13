@@ -9,6 +9,8 @@ interface GuideCardProps {
     title: string;
     country?: string;
     featuredImage: string;
+    pageId: string;
+    featuredImagePropertyId?: string;
     cardBackgroundColor?: string;
     cardTextColor?: string;
     cardTitleSize?: string;
@@ -21,12 +23,19 @@ export default function GuideCard({
     title,
     country,
     featuredImage,
+    pageId,
+    featuredImagePropertyId,
     cardBackgroundColor,
     cardTextColor,
     cardTitleSize,
     cardTitleFont,
     cardSubtitleFont,
 }: GuideCardProps) {
+    const resolvedFeaturedImage =
+        featuredImagePropertyId && pageId
+            ? `/api/notion-file?pageId=${pageId}&propertyId=${featuredImagePropertyId}`
+            : featuredImage;
+
     const backgroundColor = cardBackgroundColor || "#f0f0f0";
     const textColor = cardTextColor || "#2c2c2c";
     const titleSize = cardTitleSize || "60px";
@@ -81,7 +90,7 @@ export default function GuideCard({
             </h3>
             <div className={styles.cardImageWrapper}>
                 <Image
-                    src={featuredImage}
+                    src={resolvedFeaturedImage}
                     alt={title}
                     width={264}
                     height={264}

@@ -189,7 +189,8 @@
     padding: 0;
     flex-shrink: 0;
     transition: transform 0.2s ease-out;
-    transition: border-radius 0.2s ease-out;
+    transition: border-radius 0.2s ease-in-out;
+    cursor: url('/travel-guides/luggage-cursor.png') 16 16, pointer;
 }
 
 .guideCard img {
@@ -198,7 +199,7 @@
 
 .guideCard:hover {
     transform: scale(1.008);
-    border-radius: 40px;
+    border-radius: 50px;
 }
 
 .guideCard:hover img {
@@ -425,6 +426,14 @@
 
 .footer {
     margin-top: 80px;
+    background: transparent;
+}
+
+.footerGrid {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Responsive */

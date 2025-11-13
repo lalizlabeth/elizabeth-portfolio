@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getGuideBySlug, getGuideSlugs } from "@/lib/travel-guides";
+import { getGuideBySlug, getGuideSlugs, getAllGuides } from "@/lib/travel-guides";
 import { notFound } from "next/navigation";
 import styles from "../travel-guides.module.css";
 import MarkdownContent from "./MarkdownContent";
+import GuideCard from "../GuideCard";
 
 export async function generateStaticParams() {
     const slugs = await getGuideSlugs();
@@ -21,6 +22,17 @@ export default async function TravelGuidePage({
 
     if (!guide) {
         notFound();
+    }
+
+    // Get all guides and find next two
+    const allGuides = await getAllGuides();
+    const currentIndex = allGuides.findIndex((g) => g.slug === params.slug);
+    const nextGuides = [];
+
+    if (currentIndex !== -1 && allGuides.length > 1) {
+        const nextIndex1 = (currentIndex + 1) % allGuides.length;
+        const nextIndex2 = (currentIndex + 2) % allGuides.length;
+        nextGuides.push(allGuides[nextIndex1], allGuides[nextIndex2]);
     }
 
     const backgroundColor = guide.cardBackgroundColor || "#f0f0f0";
@@ -101,20 +113,29 @@ export default async function TravelGuidePage({
                     </p>
                 </div>
                 <div className={styles.guideContent}>
-                    <MarkdownContent content={guide.content} />
+                    <MarkdownContent content={guide.content} imageUrlBlockMap={guide.imageUrlBlockMap} />
                 </div>
-                <hr className={styles.divider} />
                 <footer className={styles.footer}>
-                    <Link
-                        href="/travel-guides"
-                        className={styles.navLink}
-                        style={{
-                            backgroundColor: textColor,
-                            color: backgroundColor,
-                        }}
-                    >
-                        ← Travel guides
-                    </Link>
+                    {nextGuides.length > 0 && (
+                        <div className={styles.footerGrid}>
+                            {nextGuides.map((nextGuide) => (
+                                <GuideCard
+                                    key={nextGuide.slug}
+                                    slug={nextGuide.slug}
+                                    title={nextGuide.title}
+                                    country={nextGuide.country}
+                                    featuredImage={nextGuide.featuredImage}
+                                    pageId={nextGuide.pageId}
+                                    featuredImagePropertyId={nextGuide.featuredImagePropertyId}
+                                    cardBackgroundColor={nextGuide.cardBackgroundColor}
+                                    cardTextColor={nextGuide.cardTextColor}
+                                    cardTitleSize={nextGuide.cardTitleSize}
+                                    cardTitleFont={nextGuide.cardTitleFont}
+                                    cardSubtitleFont={nextGuide.cardSubtitleFont}
+                                />
+                            ))}
+                        </div>
+                    )}
                 </footer>
             </main>
         </div>

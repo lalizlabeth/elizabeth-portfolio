@@ -53,6 +53,8 @@ export default async function TravelGuidesPage() {
                                 title={guide.title}
                                 country={guide.country}
                                 featuredImage={guide.featuredImage}
+                                pageId={guide.pageId}
+                                featuredImagePropertyId={guide.featuredImagePropertyId}
                                 cardBackgroundColor={guide.cardBackgroundColor}
                                 cardTextColor={guide.cardTextColor}
                                 cardTitleSize={guide.cardTitleSize}
