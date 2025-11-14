@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./travel-guides.module.css";
@@ -40,6 +41,34 @@ export default function GuideCard({
     const textColor = cardTextColor || "#2c2c2c";
     const titleSize = cardTitleSize || "60px";
 
+    // Generate random sparkle positions and properties (6-8 sparkles) only on client
+    const [sparkles, setSparkles] = useState<Array<{
+        id: number;
+        position: { top: string; left: string };
+        size: number;
+        duration: number;
+    }>>([]);
+
+    useEffect(() => {
+        const sparkleCount = Math.floor(Math.random() * 3) + 6; // 6-8 sparkles
+        const generatedSparkles = Array.from({ length: sparkleCount }, (_, i) => {
+            // Random position within the card boundaries
+            const topPercent = Math.random() * 100; // 0% to 100%
+            const leftPercent = Math.random() * 100; // 0% to 100%
+
+            return {
+                id: i,
+                position: {
+                    top: `${topPercent}%`,
+                    left: `${leftPercent}%`,
+                },
+                size: Math.floor(Math.random() * 15) + 20, // 20-35px
+                duration: (Math.random() * 0.4) + 0.5, // 0.5s - 0.9s
+            };
+        });
+        setSparkles(generatedSparkles);
+    }, []);
+
     // Map font names to CSS variables
     const getFontFamily = (fontName?: string, defaultVar: string = "--font-monospace") => {
         if (!fontName) return `var(${defaultVar})`;
@@ -50,6 +79,7 @@ export default function GuideCard({
             "Bricolage Grotesque": "var(--font-bricolage)",
             "Space Mono": "var(--font-space-mono)",
             "Pinyon Script": "var(--font-pinyon-script)",
+            "Cherry Bomb One": "var(--font-cherry-bomb)",
         };
 
         return fontMap[fontName] || `"${fontName}", sans-serif`;
@@ -72,6 +102,19 @@ export default function GuideCard({
                 backgroundColor,
             }}
         >
+            {sparkles.map((sparkle) => (
+                <span
+                    key={sparkle.id}
+                    className={styles.sparkle}
+                    aria-hidden="true"
+                    style={{
+                        ...sparkle.position,
+                        width: `${sparkle.size}px`,
+                        height: `${sparkle.size}px`,
+                        animationDuration: `${sparkle.duration}s`,
+                    }}
+                />
+            ))}
             <h3
                 className={styles.cardTitle}
                 style={{

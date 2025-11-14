@@ -125,10 +125,10 @@ export default function Home() {
             <h3>Just for fun</h3>
             <ol>
               <ExperienceRow
-                title="Guess the Dupe"
+                title="My design books"
                 subtitle="2025"
-                link="/guess-the-dupe"
-                tooltip="Can you spot the designer knockoff? A fun visual game!"
+                link="https://www.designisaparty.com/design-books"
+                tooltip="A digital version of my design book collection"
               ></ExperienceRow>
               <ExperienceRow
                 title="Discover your design aesthetic quiz"

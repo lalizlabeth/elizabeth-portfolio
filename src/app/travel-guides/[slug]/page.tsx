@@ -48,6 +48,7 @@ export default async function TravelGuidePage({
             "Bricolage Grotesque": "var(--font-bricolage)",
             "Space Mono": "var(--font-space-mono)",
             "Pinyon Script": "var(--font-pinyon-script)",
+            "Cherry Bomb One": "var(--font-cherry-bomb)",
         };
 
         return fontMap[fontName] || `"${fontName}", sans-serif`;

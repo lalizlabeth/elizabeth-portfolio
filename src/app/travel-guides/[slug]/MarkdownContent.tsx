@@ -17,11 +17,27 @@ export default function MarkdownContent({ content, imageUrlBlockMap }: MarkdownC
         }
 
         if (node?.tagName === "img") {
-            const blockId = imageUrlBlockMap?.[url];
+            // Try exact match first
+            let blockId = imageUrlBlockMap?.[url];
+
+            // If no exact match, try to find by comparing base URLs (without query params)
+            if (!blockId) {
+                const urlBase = url.split('?')[0];
+                for (const [mapUrl, mapBlockId] of Object.entries(imageUrlBlockMap || {})) {
+                    const mapUrlBase = mapUrl.split('?')[0];
+                    if (urlBase === mapUrlBase) {
+                        blockId = mapBlockId;
+                        break;
+                    }
+                }
+            }
 
             if (blockId) {
                 return `/api/notion-file?blockId=${blockId}`;
             }
+
+            console.warn('No blockId found for image URL:', url);
+            console.warn('Available URLs in map:', Object.keys(imageUrlBlockMap || {}));
         }
 
         return url;

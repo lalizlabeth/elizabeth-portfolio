@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Alegreya, Bricolage_Grotesque, Space_Mono, Pinyon_Script } from "next/font/google";
+import { IBM_Plex_Mono, Alegreya, Bricolage_Grotesque, Space_Mono, Pinyon_Script, Cherry_Bomb_One } from "next/font/google";
 import Head from "next/head";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react"
@@ -37,6 +37,13 @@ const pinyon_script = Pinyon_Script({
   style: ["normal"],
   subsets: ["latin"],
   variable: "--font-pinyon-script",
+});
+
+const cherry_bomb_one = Cherry_Bomb_One({
+  weight: ["400"],
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--font-cherry-bomb",
 });
 
 export const metadata: Metadata = {
@@ -101,7 +108,7 @@ export default function RootLayout({
         />
       </Head>
       <Analytics />
-      <body className={`${alegreya.variable} ${ibm_plex_mono.variable} ${bricolage_grotesque.variable} ${space_mono.variable} ${pinyon_script.variable}`}>
+      <body className={`${alegreya.variable} ${ibm_plex_mono.variable} ${bricolage_grotesque.variable} ${space_mono.variable} ${pinyon_script.variable} ${cherry_bomb_one.variable}`}>
         {children}
       </body>
     </html>

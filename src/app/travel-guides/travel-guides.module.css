@@ -191,6 +191,7 @@
     transition: transform 0.2s ease-out;
     transition: border-radius 0.2s ease-in-out;
     cursor: url('/travel-guides/luggage-cursor.png') 16 16, pointer;
+    overflow: visible;
 }
 
 .guideCard img {
@@ -207,6 +208,51 @@
     transform: scale(1.2);
 }
 
+.sparkle {
+    position: absolute;
+    background-image: url('/travel-guides/sparkle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    animation: dramaticSparkle 2s ease-in-out infinite;
+    animation-play-state: paused;
+    z-index: 2;
+    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.guideCard:hover .sparkle {
+    animation-play-state: running;
+}
+
+.guideCard:not(:hover) .sparkle {
+    opacity: 0 !important;
+    transform: translate(-50%, -50%) scale(0) !important;
+}
+
+@keyframes dramaticSparkle {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 1;
+    }
+
+    60% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0;
+    }
+}
+
 .cardTitle {
     position: absolute;
     top: calc(50% - 173px);
@@ -218,6 +264,11 @@
     margin: 0;
     z-index: 1;
     white-space: pre-line;
+}
+
+.cardTitle[style*="Cherry Bomb"],
+.cardTitle[style*="cherry-bomb"] {
+    font-weight: 400 !important;
 }
 
 .cardImageWrapper {
@@ -271,6 +322,11 @@
     text-align: center;
     font-weight: 800;
     line-height: 0.95;
+}
+
+.guideCoverTitle[style*="Cherry Bomb"],
+.guideCoverTitle[style*="cherry-bomb"] {
+    font-weight: 400 !important;
 }
 
 .guideCoverImageWrapper {
