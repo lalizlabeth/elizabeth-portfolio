@@ -62,6 +62,18 @@ export default function Home() {
                 tooltip="My first podcast episode!"
               ></ExperienceRow>
               <ExperienceRow
+                title="Elizabeth's Declassified Guide to Product Design"
+                subtitle="2024"
+                link="https://courses.designisaparty.com/course/course_9c2d8f37-4a1b-4f3e-9a62-b1c8d7e2f5a3"
+                tooltip="A guide with all my advice for emerging product designers!"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Elizabeth's Portfolio Guide"
+                subtitle="2023"
+                link="https://courses.designisaparty.com/course/course_9c2d8f37-4a1b-4f3e-9a62-b1c8d7e2f5a3"
+                tooltip="My guide for building a portfolio"
+              ></ExperienceRow>
+              <ExperienceRow
                 title="Training the next generation of designers"
                 subtitle="Lambda School, 2020"
                 link="/lambda-school"

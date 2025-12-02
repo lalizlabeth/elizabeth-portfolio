@@ -19,6 +19,7 @@ export type Guide = {
     pageId: string;
     featuredImagePropertyId?: string;
     imageUrlBlockMap: Record<string, string>;
+    order?: number;
     // Card styling (optional - defaults provided)
     cardBackgroundColor?: string;
     cardTextColor?: string;
@@ -37,6 +38,15 @@ function extractPlainText(property: any): string {
         return property.title.map((text: any) => text.plain_text).join("");
     }
     return "";
+}
+
+// Helper to extract number from Notion number property
+function extractNumber(property: any): number | undefined {
+    if (!property) return undefined;
+    if (property.type === "number" && typeof property.number === "number") {
+        return property.number;
+    }
+    return undefined;
 }
 
 // Helper to extract file URL from Notion files
@@ -129,6 +139,7 @@ async function notionPageToGuide(page: any): Promise<Guide> {
     const cardTextColor = extractPlainText(properties.cardTextColor);
     const cardTitleFont = extractPlainText(properties.cardTitleFont);
     const cardSubtitleFont = extractPlainText(properties.cardSubtitleFont);
+    const order = extractNumber(properties.order);
 
     const featuredImagePropertyId = properties.featuredImage?.id;
 
@@ -151,6 +162,7 @@ async function notionPageToGuide(page: any): Promise<Guide> {
         pageId: page.id,
         featuredImagePropertyId,
         imageUrlBlockMap,
+        order,
         cardBackgroundColor,
         cardTextColor,
         cardTitleFont,
@@ -177,7 +189,18 @@ export async function getAllGuides(): Promise<Guide[]> {
                 .map((page: any) => notionPageToGuide(page))
         );
 
-        console.log("Guides processed:", guides.length);
+        // Sort by order property if it exists, otherwise keep original order
+        guides.sort((a, b) => {
+            if (a.order !== undefined && b.order !== undefined) {
+                return a.order - b.order;
+            }
+            // If one has order and the other doesn't, prioritize the one with order
+            if (a.order !== undefined) return -1;
+            if (b.order !== undefined) return 1;
+            // If neither has order, maintain original order
+            return 0;
+        });
+
         return guides;
     } catch (error) {
         console.error("Error fetching guides from Notion:", error);

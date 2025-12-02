@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import styles from "../travel-guides.module.css";
 import MarkdownContent from "./MarkdownContent";
 import GuideCard from "../GuideCard";
+import StickyGuideHeader from "./StickyGuideHeader";
 
 export async function generateStaticParams() {
     const slugs = await getGuideSlugs();
@@ -69,50 +70,16 @@ export default async function TravelGuidePage({
 
             <main className={styles.guideWrapper}>
 
-                <div
-                    className={styles.guideCoverWrapper}
-                    style={{
-                        backgroundColor,
-                    }}
-                >
-                    <nav>
-                        <Link
-                            href="/travel-guides"
-                            className={styles.navLink}
-                            style={{
-                                backgroundColor: textColor,
-                                color: backgroundColor,
-                            }}
-                        >
-                            All guides
-                        </Link>
-                    </nav>
-                    <h1
-                        className={styles.guideCoverTitle}
-                        style={{
-                            fontFamily: titleFont,
-                            color: textColor,
-                            fontSize: titleSize,
-                        }}
-                    >
-                        {line1}
-                        {line2 && (
-                            <>
-                                <br />
-                                {line2}
-                            </>
-                        )}
-                    </h1>
-                    <p
-                        className={styles.guideCoverSubtitle}
-                        style={{
-                            fontFamily: subtitleFont,
-                            color: textColor,
-                        }}
-                    >
-                        {guide.country?.toUpperCase()}
-                    </p>
-                </div>
+                <StickyGuideHeader
+                    backgroundColor={backgroundColor}
+                    textColor={textColor}
+                    titleSize={titleSize}
+                    titleFont={titleFont}
+                    subtitleFont={subtitleFont}
+                    line1={line1}
+                    line2={line2}
+                    country={guide.country || ""}
+                />
                 <div className={styles.guideContent}>
                     <MarkdownContent content={guide.content} imageUrlBlockMap={guide.imageUrlBlockMap} />
                 </div>

@@ -178,6 +178,7 @@
 }
 
 .guideCard {
+    border-radius: 0;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -188,31 +189,19 @@
     height: 432px;
     padding: 0;
     flex-shrink: 0;
-    transition: transform 0.2s ease-out;
-    transition: border-radius 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     cursor: url('/travel-guides/luggage-cursor.png') 16 16, pointer;
     overflow: visible;
-}
-
-.guideCard img {
-    transition: transform 0.1s ease-out;
 }
 
 .guideCard:hover {
     transform: scale(1.008);
     border-radius: 50px;
-}
-
-.guideCard:hover img {
-    transition: transform 0.1s ease-out;
-    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 .sparkle {
     position: absolute;
-    background-image: url('/travel-guides/sparkle.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
     opacity: 0;
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0);

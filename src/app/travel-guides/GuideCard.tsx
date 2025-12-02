@@ -112,6 +112,15 @@ export default function GuideCard({
                         width: `${sparkle.size}px`,
                         height: `${sparkle.size}px`,
                         animationDuration: `${sparkle.duration}s`,
+                        backgroundColor: textColor,
+                        maskImage: 'url("/travel-guides/sparkle.svg")',
+                        WebkitMaskImage: 'url("/travel-guides/sparkle.svg")',
+                        maskSize: 'contain',
+                        WebkitMaskSize: 'contain',
+                        maskRepeat: 'no-repeat',
+                        WebkitMaskRepeat: 'no-repeat',
+                        maskPosition: 'center',
+                        WebkitMaskPosition: 'center',
                     }}
                 />
             ))}

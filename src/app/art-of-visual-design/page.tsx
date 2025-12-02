@@ -61,7 +61,7 @@ export default function ArtofVisualDesign() {
               </Link>
               , and{" "}
               <Link
-                href="https://www.templatesbyliz.com/product-design"
+                href="https://courses.designisaparty.com/course/course_9c2d8f37-4a1b-4f3e-9a62-b1c8d7e2f5a3"
                 className={styles.inlineLink}
               >
                 {"Elizabeth’s Declassified Guide to Product Design"}
