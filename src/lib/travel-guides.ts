@@ -26,6 +26,7 @@ export type Guide = {
     cardTitleFont?: string;
     cardSubtitleFont?: string;
     cardTitleSize?: string;
+    mapEmbedUrl?: string;
 };
 
 // Helper to extract plain text from Notion rich text
@@ -140,6 +141,7 @@ async function notionPageToGuide(page: any): Promise<Guide> {
     const cardTitleFont = extractPlainText(properties.cardTitleFont);
     const cardSubtitleFont = extractPlainText(properties.cardSubtitleFont);
     const order = extractNumber(properties.order);
+    const mapEmbedUrl = extractPlainText(properties.mapEmbedUrl);
 
     const featuredImagePropertyId = properties.featuredImage?.id;
 
@@ -167,6 +169,7 @@ async function notionPageToGuide(page: any): Promise<Guide> {
         cardTextColor,
         cardTitleFont,
         cardSubtitleFont,
+        mapEmbedUrl,
     };
 }
 

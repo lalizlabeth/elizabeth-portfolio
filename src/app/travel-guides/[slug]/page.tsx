@@ -6,6 +6,7 @@ import styles from "../travel-guides.module.css";
 import MarkdownContent from "./MarkdownContent";
 import GuideCard from "../GuideCard";
 import StickyGuideHeader from "./StickyGuideHeader";
+import GoogleMapEmbed from "./GoogleMapEmbed";
 
 export async function generateStaticParams() {
     const slugs = await getGuideSlugs();
@@ -80,6 +81,7 @@ export default async function TravelGuidePage({
                     line2={line2}
                     country={guide.country || ""}
                 />
+                {guide.mapEmbedUrl && <GoogleMapEmbed mapEmbedUrl={guide.mapEmbedUrl} />}
                 <div className={styles.guideContent}>
                     <MarkdownContent content={guide.content} imageUrlBlockMap={guide.imageUrlBlockMap} />
                 </div>
