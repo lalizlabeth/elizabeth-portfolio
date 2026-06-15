@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import styles from "./travel-guides.module.css";
+import styles from "./styles";
 
 export default function TravelGuidesLayout({
     children,

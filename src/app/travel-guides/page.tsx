@@ -1,5 +1,5 @@
 import { getAllGuides } from "@/lib/travel-guides";
-import styles from "./travel-guides.module.css";
+import styles from "./styles";
 import GuideCard from "./GuideCard";
 import type { Metadata } from "next";
 

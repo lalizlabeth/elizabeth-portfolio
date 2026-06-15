@@ -23,3 +23,5 @@ export default function GoogleMapEmbed({ mapEmbedUrl }: GoogleMapEmbedProps) {
     );
 }
 
+
+

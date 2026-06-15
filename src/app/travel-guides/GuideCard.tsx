@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "./travel-guides.module.css";
+import styles from "./styles";
 
 interface GuideCardProps {
     slug: string;

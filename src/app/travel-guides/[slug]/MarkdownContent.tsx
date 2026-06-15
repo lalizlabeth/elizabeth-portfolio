@@ -3,7 +3,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Element } from "hast";
-import styles from "../travel-guides.module.css";
+import styles from "../styles";
 
 type MarkdownContentProps = {
     content: string;

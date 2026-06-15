@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getGuideBySlug, getGuideSlugs, getAllGuides } from "@/lib/travel-guides";
 import { notFound } from "next/navigation";
-import styles from "../travel-guides.module.css";
+import styles from "../styles";
 import MarkdownContent from "./MarkdownContent";
 import GuideCard from "../GuideCard";
 import StickyGuideHeader from "./StickyGuideHeader";

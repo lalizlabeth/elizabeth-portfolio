@@ -195,12 +195,12 @@ export default function Home() {
             </Link>
             <p>
               {
-                "My name is Elizabeth! I'm a product designer and educator with over a decade of experience."
+                "My name is Elizabeth! I'm currently the first design program manager at Ramp where I enable designers to use AI in their workflows and build culture across the team."
               }
             </p>{" "}
             <p>
               {
-                "I'm currently building an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link>. {"I primarily teach designers how to prototype with AI and improve their visual design skills. I'm also an adjunct professor at SVA."}
+                "I also run an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link> {"where I teach designers how to prototype with AI and improve their visual design skills."}
             </p>
             <p>
               {

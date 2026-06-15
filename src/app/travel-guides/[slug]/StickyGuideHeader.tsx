@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import styles from "../travel-guides.module.css";
+import styles from "../styles";
 
 interface StickyGuideHeaderProps {
     backgroundColor: string;
