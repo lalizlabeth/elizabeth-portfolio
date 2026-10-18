@@ -260,31 +260,26 @@ export default function ArtofVisualDesign() {
         <h2 className={styles.heading1}>Related links</h2>
         <ul className={styles.links}>
           <li>
-            ↗ {""}
             <Link href="https://www.artofvisualdesign.com/">
               {"The Art of Visual Design (Elizabeth's Version)"}
             </Link>
           </li>
           <li>
-            ↗ {""}
             <Link href="https://designisaparty.com/saturns-return/">
               {"Saturn has returned: A new design school"}
             </Link>
           </li>
           <li>
-            ↗ {""}
             <Link href="https://designisaparty.com/lalizlabeth-graphix/">
               {"It all started with lalizlabeth graphix"}
             </Link>
           </li>
           <li>
-            ↗ {""}
             <Link href="https://designisaparty.com/how-to-teach/">
               {"How to teach everything without being everywhere all at once"}
             </Link>
           </li>
           <li>
-            ↗ {""}
             <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw">
               {"Educational long-form videos"}
             </Link>

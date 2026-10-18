@@ -240,13 +240,11 @@ export default function Primer() {
         <h2 className={styles.heading1}>Related links</h2>
         <ul className={styles.links}>
           <li>
-            ↗ {""}
             <Link href="https://designisaparty.com/creating-opportunities/">
               {"Creating design opportunities"}
             </Link>
           </li>
           <li>
-            ↗ {""}
             <Link href="https://www.strelioff.com/primer">
               {"Primer redesign case study"}
             </Link>

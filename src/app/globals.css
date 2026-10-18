@@ -75,16 +75,45 @@ h6 {
   isolation: isolate;
 }
 
+/* background */
+:root {
+  --bg-gradient: radial-gradient(130% 150% at 0% 0% in oklab,
+      rgb(255 155 227 / 0.42) 0%,
+      rgb(255 252 184 / 0.42) 24%,
+      rgb(189 252 201 / 0.38) 46%,
+      rgb(126 247 255 / 0.3) 64%,
+      rgb(126 247 255 / 0.16) 78%,
+      rgb(126 247 255 / 0.06) 89%,
+      rgb(126 247 255 / 0) 100%);
+}
+
+html {
+  background: #fff;
+}
+
 body {
-  background: radial-gradient(107.81% 212.88% at 0% 0%,
-      rgba(255, 155, 227, 0.4) 0%,
-      rgba(255, 252, 184, 0.4) 25%,
-      rgba(189, 252, 201, 0.4) 50%,
-      rgba(126, 247, 255, 0.4) 75%,
-      rgba(255, 255, 255, 0) 100%);
   display: flex;
   justify-content: center;
   min-height: 100vh;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body::before {
+  background: var(--bg-gradient);
+}
+
+/* Grain hides 8-bit banding in large, light gradients */
+body::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
 }
 
 /* typography */

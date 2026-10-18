@@ -31,10 +31,12 @@
   text-decoration: none;
 }
 
-.homeLink:hover {
-  /* border-bottom: 1px solid var(--color-pink); */
-  color: var(--color-pink);
-  font-style: italic;
+@media (hover: hover) {
+  .homeLink:hover {
+    /* border-bottom: 1px solid var(--color-pink); */
+    color: var(--color-pink);
+    font-style: italic;
+  }
 }
 
 .section,
@@ -87,9 +89,11 @@
   text-decoration: none;
 }
 
-.inlineLink:hover {
-  font-style: italic;
-  color: var(--color-pink);
+@media (hover: hover) {
+  .inlineLink:hover {
+    font-style: italic;
+    color: var(--color-pink);
+  }
 }
 
 .links {
@@ -107,9 +111,11 @@
   text-decoration: none;
 }
 
-.links a:hover {
-  color: var(--color-pink);
-  font-style: italic;
+@media (hover: hover) {
+  .links a:hover {
+    color: var(--color-pink);
+    font-style: italic;
+  }
 }
 
 /* Video */

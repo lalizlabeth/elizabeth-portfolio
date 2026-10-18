@@ -332,49 +332,41 @@ export default function LambdaSchool() {
           </p>
           <ul className={styles.links}>
             <li>
-              ↗ {""}
               <Link href="https://designisaparty.com/scaling-feedback/">
                 {"Scaling feedback"}
               </Link>
             </li>
             <li>
-              ↗ {""}
               <Link href="https://designisaparty.com/learning-the-why/">
                 {"Learning the why"}
               </Link>
             </li>
             <li>
-              ↗ {""}
               <Link href="https://designisaparty.com/participation-points/">
                 {"Participation points"}
               </Link>
             </li>
             <li>
-              ↗ {""}
               <Link href="https://designisaparty.com/learning-playgrounds/">
                 {"Learning playgrounds"}
               </Link>
             </li>
             <li>
-              ↗ {""}
               <Link href="https://designisaparty.com/creating-community/">
                 {"Creating learning communities"}
               </Link>
             </li>
             <li>
-              ↗ {""}
               <Link href="https://www.elizabethylin.com/teaching/project/labs/">
                 {"Building the Lambda Labs curriculum"}
               </Link>
             </li>
             <li>
-              ↗ {""}
               <Link href="https://www.elizabethylin.com/teaching/project/visual-design-club/">
                 {"Teaching visual design"}
               </Link>
             </li>
             <li>
-              ↗ {""}
               <Link href="https://elpha.com/posts/2i48449s/designing-remote-learning-communities">
                 {"Designing remote learning communities for Elpha"}
               </Link>

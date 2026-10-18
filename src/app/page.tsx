@@ -1,7 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
-
 type TooltipProps = { text: string };
 
 function Tooltip(props: TooltipProps) {
@@ -24,7 +23,7 @@ function ExperienceRow(props: ExperienceRowProps) {
     <li className={styles.experienceLineItem}>
       <Link href={`${props.link}`} className={styles.link}>
         <Tooltip text={`${props.tooltip}`}></Tooltip>
-        <h4 className={styles.title}>↗ {props.title}</h4>
+        <h4 className={styles.title}>{props.title}</h4>
         <h4 className={styles.subtitle}>{props.subtitle}</h4>
       </Link>
     </li>
@@ -38,8 +37,30 @@ export default function Home() {
         <h1>Elizabeth Lin</h1>
         <h2>Product Designer &amp; Educator</h2>
       </header>
-      <section className={styles.content}>
-        <section className={styles.experience}>
+      <section className={styles.columns}>
+        <div className={styles.column}>
+          <section className={styles.experienceGroup}>
+            <h3>About me</h3>
+            <Link className={styles.link} href="/ElizabethLinResume2024.pdf">
+              <h4 className={styles.title}>↗ Resume</h4>
+            </Link>
+            <p>
+              {
+                "My name is Elizabeth! I'm currently the first design program manager at Ramp where I enable designers to use AI in their workflows and build culture across the team."
+              }
+            </p>
+            <p>
+              {
+                "I also run an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link> {"where I teach designers how to prototype with AI and improve their visual design skills."}
+            </p>
+            <p>
+              {
+                "Outside of design, I love talking about Alexander McQueen, judging people's reading lists, and playing classical saxophone."
+              }
+            </p>
+          </section>
+        </div>
+        <div className={styles.column}>
           <section className={styles.experienceGroup}>
             <h3>Teaching &amp; mentorship</h3>
             <ol>
@@ -50,16 +71,28 @@ export default function Home() {
                 tooltip="This is what I am working on now!"
               ></ExperienceRow>
               <ExperienceRow
-                title="Founding The Art of Visual Design"
+                title="The Art of Visual Design"
                 subtitle="Design is a Party, 2023-2024"
                 link="/art-of-visual-design"
                 tooltip="300+ students have enrolled!"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Prototyping for Masters"
+                subtitle="School for Visual Arts, 2025–2026"
+                link="https://prototyping-for-masters-26.vercel.app/"
+                tooltip="A prototyping class I teach at SVA"
               ></ExperienceRow>
               <ExperienceRow
                 title="How I AI"
                 subtitle="2025"
                 link="https://www.youtube.com/watch?v=zQkFJNj-2lw&lc=UgzCeLdbexHx8qdkMap4AaABAg"
                 tooltip="My first podcast episode!"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="Design Better Podcast"
+                subtitle="2025"
+                link="https://designbetterpodcast.com/p/elizabeth-lin"
+                tooltip="My episode on the Design Better Podcast"
               ></ExperienceRow>
               <ExperienceRow
                 title="Elizabeth's Declassified Guide to Product Design"
@@ -93,9 +126,17 @@ export default function Home() {
               ></ExperienceRow>
             </ol>
           </section>
+        </div>
+        <div className={styles.column}>
           <section className={styles.experienceGroup}>
             <h3>Product &amp; Craft</h3>
             <ol>
+              <ExperienceRow
+                title="How we built ramp.design"
+                subtitle="Ramp, 2026"
+                link="https://www.youtube.com/watch?v=UWpH537zzuo"
+                tooltip="A video about how we built ramp.design"
+              ></ExperienceRow>
               <ExperienceRow
                 title="A learning community for kids"
                 subtitle="Primer, 2020-2023"
@@ -107,6 +148,12 @@ export default function Home() {
                 subtitle="Lambda School, 2020"
                 link="https://designisaparty.com/blog/who-defines-taste/"
                 tooltip="📄 Yet another blog post, this one about taste"
+              ></ExperienceRow>
+              <ExperienceRow
+                title="On playful design"
+                subtitle="Delightful Products, 2020"
+                link="https://www.delightfulproducts.org/posts/elizabeth-lin"
+                tooltip="An interview about bringing play into design"
               ></ExperienceRow>
               <ExperienceRow
                 title="My outdated portfolio"
@@ -133,6 +180,8 @@ export default function Home() {
               ></ExperienceRow>
             </ol>
           </section>
+        </div>
+        <div className={styles.column}>
           <section className={styles.experienceGroup}>
             <h3>Just for fun</h3>
             <ol>
@@ -186,29 +235,7 @@ export default function Home() {
               ></ExperienceRow>
             </ol>
           </section>
-        </section>
-        <section className={styles.backstory}>
-          <section className={styles.experienceGroup}>
-            <h3>About me</h3>
-            <Link className={styles.link} href="/ElizabethLinResume2024.pdf">
-              <h4 className={styles.title}>↗ Resume</h4>
-            </Link>
-            <p>
-              {
-                "My name is Elizabeth! I'm currently the first design program manager at Ramp where I enable designers to use AI in their workflows and build culture across the team."
-              }
-            </p>{" "}
-            <p>
-              {
-                "I also run an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link> {"where I teach designers how to prototype with AI and improve their visual design skills."}
-            </p>
-            <p>
-              {
-                "Outside of design, I love talking about Alexander McQueen, judging people's reading lists, and playing classical saxophone."
-              }
-            </p>{" "}
-          </section>{" "}
-        </section>
+        </div>
       </section>
       <footer className={styles.footer}>
         <h3>Elsewhere on the internet</h3>
