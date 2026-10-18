@@ -15,7 +15,7 @@ export default function Primer() {
         <h2 className={styles.heading1}>Overview</h2>
         <section className={styles.subsection}>
           <p>
-            <Link className={styles.inlineLink} href="https://primer.com/">
+            <Link className={styles.inlineLink} href="https://primer.com/" target="_blank" rel="noopener noreferrer">
               Primer
             </Link>{" "}
             is a startup with a mission to change the education system from the
@@ -32,6 +32,8 @@ export default function Primer() {
               {"Managed Primer’s design team and"}{" "}
               <Link
                 href="https://designisaparty.com/creating-opportunities/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.inlineLink}
               >
                 internship program
@@ -240,12 +242,12 @@ export default function Primer() {
         <h2 className={styles.heading1}>Related links</h2>
         <ul className={styles.links}>
           <li>
-            <Link href="https://designisaparty.com/creating-opportunities/">
+            <Link href="https://designisaparty.com/creating-opportunities/" target="_blank" rel="noopener noreferrer">
               {"Creating design opportunities"}
             </Link>
           </li>
           <li>
-            <Link href="https://www.strelioff.com/primer">
+            <Link href="https://www.strelioff.com/primer" target="_blank" rel="noopener noreferrer">
               {"Primer redesign case study"}
             </Link>
           </li>

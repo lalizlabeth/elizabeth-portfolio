@@ -19,9 +19,14 @@ type ExperienceRowProps = {
 };
 
 function ExperienceRow(props: ExperienceRowProps) {
+  const isExternal = /^https?:\/\//.test(props.link);
   return (
     <li className={styles.experienceLineItem}>
-      <Link href={`${props.link}`} className={styles.link}>
+      <Link
+        href={`${props.link}`}
+        className={styles.link}
+        {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
+      >
         <Tooltip text={`${props.tooltip}`}></Tooltip>
         <h4 className={styles.title}>{props.title}</h4>
         <h4 className={styles.subtitle}>{props.subtitle}</h4>
@@ -51,7 +56,7 @@ export default function Home() {
             </p>
             <p>
               {
-                "I also run an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/'>design is a party</Link> {"where I teach designers how to prototype with AI and improve their visual design skills."}
+                "I also run an alternative design school called"} <Link className={styles.inlineLink} href='https://www.designisaparty.com/' target="_blank" rel="noopener noreferrer">design is a party</Link> {"where I teach designers how to prototype with AI and improve their visual design skills."}
             </p>
             <p>
               {
@@ -240,27 +245,27 @@ export default function Home() {
       <footer className={styles.footer}>
         <h3>Elsewhere on the internet</h3>
         <section className={styles.links}>
-          <Link href="https://designisaparty.com/blog">
+          <Link href="https://designisaparty.com/blog" target="_blank" rel="noopener noreferrer">
             <h4 className={styles.title}>Blog</h4>
           </Link>
           ·
-          <Link href="https://www.linkedin.com/in/elizabethylin/">
+          <Link href="https://www.linkedin.com/in/elizabethylin/" target="_blank" rel="noopener noreferrer">
             <h4 className={styles.title}>LinkedIn</h4>
           </Link>
           ·
-          <Link href="https://x.com/lalizlabeth">
+          <Link href="https://x.com/lalizlabeth" target="_blank" rel="noopener noreferrer">
             <h4 className={styles.title}>Twitter</h4>
           </Link>
           ·
-          <Link href="https://www.tiktok.com/@lalizlabeth">
+          <Link href="https://www.tiktok.com/@lalizlabeth" target="_blank" rel="noopener noreferrer">
             <h4 className={styles.title}>TikTok</h4>
           </Link>{" "}
           ·
-          <Link href="https://www.instagram.com/lalizlabeth.design/">
+          <Link href="https://www.instagram.com/lalizlabeth.design/" target="_blank" rel="noopener noreferrer">
             <h4 className={styles.title}>Instagram</h4>
           </Link>
           ·
-          <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw">
+          <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw" target="_blank" rel="noopener noreferrer">
             <h4 className={styles.title}>YouTube</h4>
           </Link>
         </section>

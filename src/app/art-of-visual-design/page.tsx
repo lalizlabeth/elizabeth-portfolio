@@ -30,6 +30,8 @@ export default function ArtofVisualDesign() {
             <Link
               className={styles.inlineLink}
               href="https://www.artofvisualdesign.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {"The Art of Visual Design (Elizabeth’s Version)"}
             </Link>{" "}
@@ -48,6 +50,8 @@ export default function ArtofVisualDesign() {
               {" on my digitally published resources: "}
               <Link
                 href="https://www.templatesbyliz.com/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.inlineLink}
               >
                 {"Elizabeth’s Portfolio Guide"}
@@ -55,6 +59,8 @@ export default function ArtofVisualDesign() {
               ,{" "}
               <Link
                 href="https://www.templatesbyliz.com/job-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.inlineLink}
               >
                 {"Elizabeth’s Job Tracker"}
@@ -62,6 +68,8 @@ export default function ArtofVisualDesign() {
               , and{" "}
               <Link
                 href="https://courses.designisaparty.com/course/course_9c2d8f37-4a1b-4f3e-9a62-b1c8d7e2f5a3"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={styles.inlineLink}
               >
                 {"Elizabeth’s Declassified Guide to Product Design"}
@@ -80,6 +88,8 @@ export default function ArtofVisualDesign() {
               <Link
                 className={styles.inlineLink}
                 href="https://www.tiktok.com/@lalizlabeth.design"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 TikTok
               </Link>{" "}
@@ -87,6 +97,8 @@ export default function ArtofVisualDesign() {
               <Link
                 className={styles.inlineLink}
                 href="https://www.instagram.com/lalizlabeth.design/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Instagram
               </Link>
@@ -130,6 +142,8 @@ export default function ArtofVisualDesign() {
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/how-to-teach/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               How to teach everything without being everywhere all at once
             </Link>
@@ -151,6 +165,8 @@ export default function ArtofVisualDesign() {
             {"My teaching philosophy is centered around "}
             <Link
               href="https://designisaparty.com/learning-playgrounds/"
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.inlineLink}
             >
               {"learning playgrounds"}
@@ -260,27 +276,27 @@ export default function ArtofVisualDesign() {
         <h2 className={styles.heading1}>Related links</h2>
         <ul className={styles.links}>
           <li>
-            <Link href="https://www.artofvisualdesign.com/">
+            <Link href="https://www.artofvisualdesign.com/" target="_blank" rel="noopener noreferrer">
               {"The Art of Visual Design (Elizabeth's Version)"}
             </Link>
           </li>
           <li>
-            <Link href="https://designisaparty.com/saturns-return/">
+            <Link href="https://designisaparty.com/saturns-return/" target="_blank" rel="noopener noreferrer">
               {"Saturn has returned: A new design school"}
             </Link>
           </li>
           <li>
-            <Link href="https://designisaparty.com/lalizlabeth-graphix/">
+            <Link href="https://designisaparty.com/lalizlabeth-graphix/" target="_blank" rel="noopener noreferrer">
               {"It all started with lalizlabeth graphix"}
             </Link>
           </li>
           <li>
-            <Link href="https://designisaparty.com/how-to-teach/">
+            <Link href="https://designisaparty.com/how-to-teach/" target="_blank" rel="noopener noreferrer">
               {"How to teach everything without being everywhere all at once"}
             </Link>
           </li>
           <li>
-            <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw">
+            <Link href="https://www.youtube.com/channel/UCUVHN5VUbFL_XuawreeImPw" target="_blank" rel="noopener noreferrer">
               {"Educational long-form videos"}
             </Link>
           </li>

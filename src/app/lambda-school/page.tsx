@@ -194,6 +194,8 @@ export default function LambdaSchool() {
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/learning-playgrounds/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {"Learning playgrounds"}
             </Link>
@@ -201,6 +203,8 @@ export default function LambdaSchool() {
             <Link
               className={styles.inlineLink}
               href="https://www.elizabethylin.com/teaching/project/visual-design-club/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Teaching visual design
             </Link>
@@ -208,6 +212,8 @@ export default function LambdaSchool() {
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/who-defines-taste/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {"Who defines good taste?"}
             </Link>
@@ -233,6 +239,8 @@ export default function LambdaSchool() {
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/scaling-feedback/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {'"Scaling" feedback'}
             </Link>
@@ -260,6 +268,8 @@ export default function LambdaSchool() {
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/learning-the-why/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {"Learning the why"}
             </Link>{" "}
@@ -267,6 +277,8 @@ export default function LambdaSchool() {
             <Link
               className={styles.inlineLink}
               href="https://designisaparty.com/participation-points/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {"Participation points"}
             </Link>
@@ -332,42 +344,42 @@ export default function LambdaSchool() {
           </p>
           <ul className={styles.links}>
             <li>
-              <Link href="https://designisaparty.com/scaling-feedback/">
+              <Link href="https://designisaparty.com/scaling-feedback/" target="_blank" rel="noopener noreferrer">
                 {"Scaling feedback"}
               </Link>
             </li>
             <li>
-              <Link href="https://designisaparty.com/learning-the-why/">
+              <Link href="https://designisaparty.com/learning-the-why/" target="_blank" rel="noopener noreferrer">
                 {"Learning the why"}
               </Link>
             </li>
             <li>
-              <Link href="https://designisaparty.com/participation-points/">
+              <Link href="https://designisaparty.com/participation-points/" target="_blank" rel="noopener noreferrer">
                 {"Participation points"}
               </Link>
             </li>
             <li>
-              <Link href="https://designisaparty.com/learning-playgrounds/">
+              <Link href="https://designisaparty.com/learning-playgrounds/" target="_blank" rel="noopener noreferrer">
                 {"Learning playgrounds"}
               </Link>
             </li>
             <li>
-              <Link href="https://designisaparty.com/creating-community/">
+              <Link href="https://designisaparty.com/creating-community/" target="_blank" rel="noopener noreferrer">
                 {"Creating learning communities"}
               </Link>
             </li>
             <li>
-              <Link href="https://www.elizabethylin.com/teaching/project/labs/">
+              <Link href="https://www.elizabethylin.com/teaching/project/labs/" target="_blank" rel="noopener noreferrer">
                 {"Building the Lambda Labs curriculum"}
               </Link>
             </li>
             <li>
-              <Link href="https://www.elizabethylin.com/teaching/project/visual-design-club/">
+              <Link href="https://www.elizabethylin.com/teaching/project/visual-design-club/" target="_blank" rel="noopener noreferrer">
                 {"Teaching visual design"}
               </Link>
             </li>
             <li>
-              <Link href="https://elpha.com/posts/2i48449s/designing-remote-learning-communities">
+              <Link href="https://elpha.com/posts/2i48449s/designing-remote-learning-communities" target="_blank" rel="noopener noreferrer">
                 {"Designing remote learning communities for Elpha"}
               </Link>
             </li>
