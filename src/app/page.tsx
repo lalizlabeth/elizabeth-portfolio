@@ -96,13 +96,13 @@ export default function Home() {
               ></ExperienceRow>
               <ExperienceRow
                 title="Elizabeth's Declassified Guide to Product Design"
-                subtitle="2024"
+                subtitle="Design is a Party, 2024"
                 link="https://courses.designisaparty.com/course/course_9c2d8f37-4a1b-4f3e-9a62-b1c8d7e2f5a3"
                 tooltip="A guide with all my advice for emerging product designers!"
               ></ExperienceRow>
               <ExperienceRow
                 title="Elizabeth's Portfolio Guide"
-                subtitle="2023"
+                subtitle="Design is a Party, 2023"
                 link="https://courses.designisaparty.com/course/course_9c2d8f37-4a1b-4f3e-9a62-b1c8d7e2f5a3"
                 tooltip="My guide for building a portfolio"
               ></ExperienceRow>
